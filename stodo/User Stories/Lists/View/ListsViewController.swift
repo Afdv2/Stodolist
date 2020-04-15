@@ -1,9 +1,11 @@
 import UIKit
 import Moya
 
-class ListsViewController: UIViewController, ListsViewInput, ModuleTransitionable {
-    
+final class ListsViewController: UIViewController, ListsViewInput, ModuleTransitionable {
     var output: ListsViewOutput?
+    
+    @IBOutlet weak var tableView: UITableView!
+    var dataSource: ListsDataSource!
     
     static func create(nibName: String? = nil, bundle: Bundle? = nil) -> ListsViewController {
         if nibName == nil {
@@ -16,6 +18,24 @@ class ListsViewController: UIViewController, ListsViewInput, ModuleTransitionabl
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        
+        output?.viewLoaded()
+    }
+    
+    func set(title: String) {
+        navigationItem.title = title
+    }
+    
+    func set(lists: [List]) {
+        dataSource.lists = lists
+        tableView.reloadData()
+    }
+    
+    private func setupView() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        dataSource = ListsDataSource()
+        dataSource.configure(tableView: tableView)
     }
 
 }
