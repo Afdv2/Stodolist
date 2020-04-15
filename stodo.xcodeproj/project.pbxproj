@@ -3,12 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0008E92F550F0EF11A062D9C /* Pods_stodo_stodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBED0B6F0DE2E9D35C7053B /* Pods_stodo_stodoUITests.framework */; };
 		275CDD6A4F0260EA25B57850 /* Pods_stodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD38D43AF365C38E8DABDFF /* Pods_stodoTests.framework */; };
+		A801ADF92443C4090078225D /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADF82443C4090078225D /* String+Data.swift */; };
+		A801ADFC2443C5510078225D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFB2443C5510078225D /* Task.swift */; };
+		A801ADFE2443C55A0078225D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFD2443C55A0078225D /* List.swift */; };
+		A801AE002443C5F20078225D /* ListsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFF2443C5F20078225D /* ListsResponse.swift */; };
+		A801AE042443C8580078225D /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801AE022443C8580078225D /* ListsViewController.swift */; };
+		A801AE052443C8580078225D /* ListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A801AE032443C8580078225D /* ListsViewController.xib */; };
+		A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58502443BD9F00B237F0 /* ListsAPI.swift */; };
+		A82D58532443BE3E00B237F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58522443BE3E00B237F0 /* Constants.swift */; };
+		A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */; };
+		A83A2CBD2444E37C007C0BEB /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBC2444E37C007C0BEB /* ListService.swift */; };
+		A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */; };
 		A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F3244384C8004EE028 /* AppDelegate.swift */; };
 		A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F7244384C8004EE028 /* ViewController.swift */; };
 		A8B9E8FD244384C9004EE028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B9E8FC244384C9004EE028 /* Assets.xcassets */; };
@@ -43,6 +54,17 @@
 		80924571463C2C0C877A7C6B /* Pods-stodoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stodoTests.release.xcconfig"; path = "Target Support Files/Pods-stodoTests/Pods-stodoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9DBED0B6F0DE2E9D35C7053B /* Pods_stodo_stodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodo_stodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CFE2CA162DB243D86B8ECA /* Pods-stodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stodoTests.debug.xcconfig"; path = "Target Support Files/Pods-stodoTests/Pods-stodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A801ADF82443C4090078225D /* String+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
+		A801ADFB2443C5510078225D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A801ADFD2443C55A0078225D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		A801ADFF2443C5F20078225D /* ListsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsResponse.swift; sourceTree = "<group>"; };
+		A801AE022443C8580078225D /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		A801AE032443C8580078225D /* ListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsViewController.xib; sourceTree = "<group>"; };
+		A82D58502443BD9F00B237F0 /* ListsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsAPI.swift; sourceTree = "<group>"; };
+		A82D58522443BE3E00B237F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsServiceProtocol.swift; sourceTree = "<group>"; };
+		A83A2CBC2444E37C007C0BEB /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataError.swift; sourceTree = "<group>"; };
 		A8B9E8F0244384C8004EE028 /* stodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E8F3244384C8004EE028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B9E8F7244384C8004EE028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +119,67 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A801ADF62443C3F70078225D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CC62444F39B007C0BEB /* Errors */,
+				A801ADF72443C3FD0078225D /* Extensions */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		A801ADF72443C3FD0078225D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A801ADF82443C4090078225D /* String+Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A801ADFA2443C5470078225D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A801ADFB2443C5510078225D /* Task.swift */,
+				A801ADFD2443C55A0078225D /* List.swift */,
+				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A801AE012443C80A0078225D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A801AE022443C8580078225D /* ListsViewController.swift */,
+				A801AE032443C8580078225D /* ListsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A82D584F2443BD8E00B237F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A82D58502443BD9F00B237F0 /* ListsAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A83A2CB92444E34E007C0BEB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */,
+				A83A2CBC2444E37C007C0BEB /* ListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A83A2CC62444F39B007C0BEB /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		A89B2E982443950C0042983E /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +191,10 @@
 		A89B2E992443951B0042983E /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				A82D584F2443BD8E00B237F0 /* Network */,
+				A83A2CB92444E34E007C0BEB /* Services */,
+				A801ADFA2443C5470078225D /* Model */,
+				A801AE012443C80A0078225D /* View */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -120,6 +207,7 @@
 				A8B9E8F7244384C8004EE028 /* ViewController.swift */,
 				A8B9E8FE244384C9004EE028 /* LaunchScreen.storyboard */,
 				A8B9E8FC244384C9004EE028 /* Assets.xcassets */,
+				A82D58522443BE3E00B237F0 /* Constants.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -149,6 +237,7 @@
 		A8B9E8F2244384C8004EE028 /* stodo */ = {
 			isa = PBXGroup;
 			children = (
+				A801ADF62443C3F70078225D /* Library */,
 				A89B2E9A2443B6720042983E /* Main */,
 				A89B2E982443950C0042983E /* User Stories */,
 			);
@@ -197,6 +286,7 @@
 				A8B9E8EC244384C8004EE028 /* Sources */,
 				A8B9E8ED244384C8004EE028 /* Frameworks */,
 				A8B9E8EE244384C8004EE028 /* Resources */,
+				0781DAC31CD3317F1923D4CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +324,7 @@
 				A8B9E90D244384CA004EE028 /* Sources */,
 				A8B9E90E244384CA004EE028 /* Frameworks */,
 				A8B9E90F244384CA004EE028 /* Resources */,
+				627974BE87C12BFBB1B4563C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +386,7 @@
 			files = (
 				A8B9E900244384C9004EE028 /* LaunchScreen.storyboard in Resources */,
 				A8B9E8FD244384C9004EE028 /* Assets.xcassets in Resources */,
+				A801AE052443C8580078225D /* ListsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +407,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0781DAC31CD3317F1923D4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stodo/Pods-stodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stodo/Pods-stodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stodo/Pods-stodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		35806B1A4B19CEC1C88F2F2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +444,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		627974BE87C12BFBB1B4563C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stodo-stodoUITests/Pods-stodo-stodoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stodo-stodoUITests/Pods-stodo-stodoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stodo-stodoUITests/Pods-stodo-stodoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8DC9290BAEB8A7E16738741E /* [CP] Check Pods Manifest.lock */ = {
@@ -388,8 +514,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
+				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
+				A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */,
+				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
+				A801ADFE2443C55A0078225D /* List.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
+				A83A2CBD2444E37C007C0BEB /* ListService.swift in Sources */,
+				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,
+				A801ADFC2443C5510078225D /* Task.swift in Sources */,
+				A82D58532443BE3E00B237F0 /* Constants.swift in Sources */,
+				A801AE042443C8580078225D /* ListsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
