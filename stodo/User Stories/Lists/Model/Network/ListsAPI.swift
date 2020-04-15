@@ -42,7 +42,7 @@ extension ListsAPI: TargetType {
     var sampleData: Data {
         switch self {
         case .all:
-            return "{\"lists\":[{\"guid\":\"1\",\"title\":\"list1\",\"tasks\":[{\"guid\":\"100\",\"title\":\"task100\",\"status\":false},{\"guid\":\"101\",\"title\":\"task101\",\"status\":true}]},{\"guid\":\"2\",\"title\":\"list2\",\"tasks\":[{\"guid\":\"200\",\"title\":\"task200\",\"status\":true},{\"guid\":\"201\",\"title\":\"task201\",\"status\":false}]}]}".dataEncoded
+            return "{\"lists\":[{\"guid\":\"1\",\"title\":\"Создать приложение Stodolist\",\"description\":\"приложение для планирования задач\",\"tasks\":[{\"guid\":\"100\",\"title\":\"создать прототип проекта\",\"status\":false},{\"guid\":\"101\",\"title\":\"создать дизайн\",\"status\":true}]},{\"guid\":\"2\",\"title\":\"Выучить английский\",\"description\":\"Поступить в университет в Великобритании\",\"tasks\":[{\"guid\":\"200\",\"title\":\"Собрать документы на визу\",\"status\":true},{\"guid\":\"201\",\"title\":\"Собрать документы на оформление квартиры\",\"status\":false}]}]}".dataEncoded
         case .put( _):
             return "empty".dataEncoded
         case .delete(id: _):
