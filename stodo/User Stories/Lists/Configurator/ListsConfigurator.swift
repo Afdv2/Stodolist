@@ -1,11 +1,17 @@
 import Moya
 
 final class ListsConfigurator {
-    func configure(output: ListsModuleOutput? = nil) -> ListsViewController {
+    func configure(shouldMock: Bool = false, output: ListsModuleOutput? = nil) -> ListsViewController {
         let view = ListsViewController(nibName: "ListsViewController", bundle: nil)
         let presenter = ListsPresenter()
         let router = ListsRouter()
-        let provider = MoyaProvider<ListsAPI>()
+        
+        var provider: MoyaProvider<ListsAPI>
+        if shouldMock {
+            provider = MoyaProvider<ListsAPI>(stubClosure: MoyaProvider.delayedStub(1.0))
+        } else {
+            provider = MoyaProvider<ListsAPI>()
+        }
         let service = ListsService(listsProvider: provider)
         
         presenter.view = view
