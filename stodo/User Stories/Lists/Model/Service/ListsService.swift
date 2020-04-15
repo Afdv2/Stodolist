@@ -1,6 +1,6 @@
 import Moya
 
-struct ListService: ListServiceProtocol {
+struct ListsService: ListsServiceProtocol {
     private let listsProvider: MoyaProvider<ListsAPI>
     
     init(listsProvider: MoyaProvider<ListsAPI>) {

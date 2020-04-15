@@ -18,7 +18,7 @@
 		A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58502443BD9F00B237F0 /* ListsAPI.swift */; };
 		A82D58532443BE3E00B237F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58522443BE3E00B237F0 /* Constants.swift */; };
 		A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */; };
-		A83A2CBD2444E37C007C0BEB /* ListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBC2444E37C007C0BEB /* ListService.swift */; };
+		A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBC2444E37C007C0BEB /* ListsService.swift */; };
 		A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */; };
 		A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F3244384C8004EE028 /* AppDelegate.swift */; };
 		A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F7244384C8004EE028 /* ViewController.swift */; };
@@ -26,6 +26,16 @@
 		A8B9E900244384C9004EE028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B9E8FE244384C9004EE028 /* LaunchScreen.storyboard */; };
 		A8B9E90B244384CA004EE028 /* stodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E90A244384CA004EE028 /* stodoTests.swift */; };
 		A8B9E916244384CA004EE028 /* stodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E915244384CA004EE028 /* stodoUITests.swift */; };
+		A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8924477EA700F9EE13 /* ListsModuleInput.swift */; };
+		A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8B24477EC900F9EE13 /* ListsModuleOutput.swift */; };
+		A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8D24477EE200F9EE13 /* ListsPresenter.swift */; };
+		A8C54F9024477F7F00F9EE13 /* ListsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8F24477F7F00F9EE13 /* ListsViewInput.swift */; };
+		A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9124477FC600F9EE13 /* ListsViewOutput.swift */; };
+		A8C54F94244781B100F9EE13 /* ListsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F93244781B100F9EE13 /* ListsConfigurator.swift */; };
+		A8C54F9B2447829800F9EE13 /* ListsConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9A2447829800F9EE13 /* ListsConfiguratorTests.swift */; };
+		A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */; };
+		A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9F2447887800F9EE13 /* ListsRouter.swift */; };
+		A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */; };
 		FF27F1BAF72F42C1501E09A5 /* Pods_stodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +73,7 @@
 		A82D58502443BD9F00B237F0 /* ListsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsAPI.swift; sourceTree = "<group>"; };
 		A82D58522443BE3E00B237F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsServiceProtocol.swift; sourceTree = "<group>"; };
-		A83A2CBC2444E37C007C0BEB /* ListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListService.swift; sourceTree = "<group>"; };
+		A83A2CBC2444E37C007C0BEB /* ListsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsService.swift; sourceTree = "<group>"; };
 		A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataError.swift; sourceTree = "<group>"; };
 		A8B9E8F0244384C8004EE028 /* stodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E8F3244384C8004EE028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +87,16 @@
 		A8B9E911244384CA004EE028 /* stodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E915244384CA004EE028 /* stodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stodoUITests.swift; sourceTree = "<group>"; };
 		A8B9E917244384CA004EE028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C54F8924477EA700F9EE13 /* ListsModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsModuleInput.swift; sourceTree = "<group>"; };
+		A8C54F8B24477EC900F9EE13 /* ListsModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsModuleOutput.swift; sourceTree = "<group>"; };
+		A8C54F8D24477EE200F9EE13 /* ListsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsPresenter.swift; sourceTree = "<group>"; };
+		A8C54F8F24477F7F00F9EE13 /* ListsViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewInput.swift; sourceTree = "<group>"; };
+		A8C54F9124477FC600F9EE13 /* ListsViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewOutput.swift; sourceTree = "<group>"; };
+		A8C54F93244781B100F9EE13 /* ListsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsConfigurator.swift; sourceTree = "<group>"; };
+		A8C54F9A2447829800F9EE13 /* ListsConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsConfiguratorTests.swift; sourceTree = "<group>"; };
+		A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouterInput.swift; sourceTree = "<group>"; };
+		A8C54F9F2447887800F9EE13 /* ListsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouter.swift; sourceTree = "<group>"; };
+		A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD38D43AF365C38E8DABDFF /* Pods_stodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +142,7 @@
 		A801ADF62443C3F70078225D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A8C54FA1244788D300F9EE13 /* Protocols */,
 				A83A2CC62444F39B007C0BEB /* Errors */,
 				A801ADF72443C3FD0078225D /* Extensions */,
 			);
@@ -139,6 +160,8 @@
 		A801ADFA2443C5470078225D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A82D584F2443BD8E00B237F0 /* Network */,
+				A8C54F8724477E1500F9EE13 /* Service */,
 				A801ADFB2443C5510078225D /* Task.swift */,
 				A801ADFD2443C55A0078225D /* List.swift */,
 				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
@@ -149,6 +172,8 @@
 		A801AE012443C80A0078225D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A8C54F8F24477F7F00F9EE13 /* ListsViewInput.swift */,
+				A8C54F9124477FC600F9EE13 /* ListsViewOutput.swift */,
 				A801AE022443C8580078225D /* ListsViewController.swift */,
 				A801AE032443C8580078225D /* ListsViewController.xib */,
 			);
@@ -161,15 +186,6 @@
 				A82D58502443BD9F00B237F0 /* ListsAPI.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		A83A2CB92444E34E007C0BEB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */,
-				A83A2CBC2444E37C007C0BEB /* ListService.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		A83A2CC62444F39B007C0BEB /* Errors */ = {
@@ -191,9 +207,10 @@
 		A89B2E992443951B0042983E /* Lists */ = {
 			isa = PBXGroup;
 			children = (
-				A82D584F2443BD8E00B237F0 /* Network */,
-				A83A2CB92444E34E007C0BEB /* Services */,
+				A8C54F8524477D8600F9EE13 /* Configurator */,
+				A8C54F9C2447883C00F9EE13 /* Router */,
 				A801ADFA2443C5470078225D /* Model */,
+				A8C54F8624477DCE00F9EE13 /* Presenter */,
 				A801AE012443C80A0078225D /* View */,
 			);
 			path = Lists;
@@ -247,6 +264,7 @@
 		A8B9E909244384CA004EE028 /* stodoTests */ = {
 			isa = PBXGroup;
 			children = (
+				A8C54F952447822600F9EE13 /* UserStories */,
 				A8B9E90A244384CA004EE028 /* stodoTests.swift */,
 				A8B9E90C244384CA004EE028 /* Info.plist */,
 			);
@@ -260,6 +278,74 @@
 				A8B9E917244384CA004EE028 /* Info.plist */,
 			);
 			path = stodoUITests;
+			sourceTree = "<group>";
+		};
+		A8C54F8524477D8600F9EE13 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F93244781B100F9EE13 /* ListsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A8C54F8624477DCE00F9EE13 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F8924477EA700F9EE13 /* ListsModuleInput.swift */,
+				A8C54F8B24477EC900F9EE13 /* ListsModuleOutput.swift */,
+				A8C54F8D24477EE200F9EE13 /* ListsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8C54F8724477E1500F9EE13 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */,
+				A83A2CBC2444E37C007C0BEB /* ListsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A8C54F952447822600F9EE13 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F982447824F00F9EE13 /* Lists */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		A8C54F982447824F00F9EE13 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F992447826800F9EE13 /* Configurator */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		A8C54F992447826800F9EE13 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F9A2447829800F9EE13 /* ListsConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A8C54F9C2447883C00F9EE13 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */,
+				A8C54F9F2447887800F9EE13 /* ListsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A8C54FA1244788D300F9EE13 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E56D92E7E793A4058E5903B5 /* Pods */ = {
@@ -514,17 +600,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */,
+				A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */,
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
 				A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */,
+				A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */,
+				A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */,
+				A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */,
 				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
 				A801ADFE2443C55A0078225D /* List.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
-				A83A2CBD2444E37C007C0BEB /* ListService.swift in Sources */,
+				A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */,
+				A8C54F9024477F7F00F9EE13 /* ListsViewInput.swift in Sources */,
+				A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */,
 				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,
 				A801ADFC2443C5510078225D /* Task.swift in Sources */,
 				A82D58532443BE3E00B237F0 /* Constants.swift in Sources */,
+				A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */,
+				A8C54F94244781B100F9EE13 /* ListsConfigurator.swift in Sources */,
 				A801AE042443C8580078225D /* ListsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +628,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C54F9B2447829800F9EE13 /* ListsConfiguratorTests.swift in Sources */,
 				A8B9E90B244384CA004EE028 /* stodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
