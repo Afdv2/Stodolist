@@ -172,11 +172,9 @@
 		A801ADFA2443C5470078225D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A84CC11B244B12B800BD5DFC /* Entity */,
 				A82D584F2443BD8E00B237F0 /* Network */,
 				A8C54F8724477E1500F9EE13 /* Service */,
-				A801ADFB2443C5510078225D /* Task.swift */,
-				A801ADFD2443C55A0078225D /* List.swift */,
-				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +205,16 @@
 				A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		A84CC11B244B12B800BD5DFC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A801ADFB2443C5510078225D /* Task.swift */,
+				A801ADFD2443C55A0078225D /* List.swift */,
+				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		A886FF1624479C3F00EBAF2F /* tableView */ = {

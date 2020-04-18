@@ -3,7 +3,7 @@
 //  stodo
 //
 //  Created by Alexandr on 12.04.2020.
-//  Copyright © 2020 clean-code.club. All rights reserved.
+//  Copyright © 2020 clean-code.club. All rights reserved.  
 //
 
 import UIKit

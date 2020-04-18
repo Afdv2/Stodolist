@@ -22,7 +22,7 @@ final class ListsPresenter: ListsViewOutput, ListsModuleInput {
             case .success(let lists):
                 self.view?.set(lists: lists)
             case .failure(let error):
-                print(error)
+                self.router?.showError(title: "Ошибка загрузки проектов", description: error.localizedDescription)
             }
         })
     }

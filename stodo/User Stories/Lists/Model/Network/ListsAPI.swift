@@ -23,11 +23,12 @@ extension ListsAPI: TargetType {
     
     var method: Moya.Method {
         switch self {
-            case .all,
-                 .delete:
-                return .get
-            case .put:
-                return .put
+        case .all:
+            return .get
+        case .put:
+            return .put
+        case .delete:
+            return .delete
             }
     }
     
