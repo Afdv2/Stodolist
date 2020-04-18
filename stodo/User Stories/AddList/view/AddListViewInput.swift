@@ -1,0 +1,3 @@
+protocol AddListViewInput: AnyObject {
+    
+}

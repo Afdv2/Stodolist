@@ -41,6 +41,20 @@
 		A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */; };
 		A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9F2447887800F9EE13 /* ListsRouter.swift */; };
 		A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */; };
+		A8F0E45E244B1E3600EC5830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E45D244B1E3600EC5830 /* Assets.xcassets */; };
+		A8F0E464244B21DF00EC5830 /* AddListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E463244B21DF00EC5830 /* AddListModuleOutput.swift */; };
+		A8F0E466244B21F200EC5830 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E465244B21F200EC5830 /* AddListPresenter.swift */; };
+		A8F0E46A244B222800EC5830 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E468244B222800EC5830 /* AddListViewController.swift */; };
+		A8F0E46B244B222800EC5830 /* AddListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E469244B222800EC5830 /* AddListViewController.xib */; };
+		A8F0E46F244B224C00EC5830 /* AddListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E46E244B224C00EC5830 /* AddListViewOutput.swift */; };
+		A8F0E473244B239100EC5830 /* AddListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E472244B239100EC5830 /* AddListConfigurator.swift */; };
+		A8F0E479244B2F6E00EC5830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E478244B2F6E00EC5830 /* Assets.xcassets */; };
+		A8F0E47B244B35C300EC5830 /* UITextField+Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E47A244B35C300EC5830 /* UITextField+Done.swift */; };
+		A8F0E47D244B376100EC5830 /* UITextView+Done.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E47C244B376100EC5830 /* UITextView+Done.swift */; };
+		A8F0E47F244B384B00EC5830 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E47E244B384B00EC5830 /* UIColor+hex.swift */; };
+		A8F0E481244B39CD00EC5830 /* AddListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E480244B39CD00EC5830 /* AddListViewInput.swift */; };
+		A8F0E484244B3F1800EC5830 /* AddListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E483244B3F1800EC5830 /* AddListRouterInput.swift */; };
+		A8F0E486244B3F2E00EC5830 /* AddListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E485244B3F2E00EC5830 /* AddListRouter.swift */; };
 		FF27F1BAF72F42C1501E09A5 /* Pods_stodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +121,20 @@
 		A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouterInput.swift; sourceTree = "<group>"; };
 		A8C54F9F2447887800F9EE13 /* ListsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouter.swift; sourceTree = "<group>"; };
 		A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		A8F0E45D244B1E3600EC5830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8F0E463244B21DF00EC5830 /* AddListModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListModuleOutput.swift; sourceTree = "<group>"; };
+		A8F0E465244B21F200EC5830 /* AddListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
+		A8F0E468244B222800EC5830 /* AddListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
+		A8F0E469244B222800EC5830 /* AddListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddListViewController.xib; sourceTree = "<group>"; };
+		A8F0E46E244B224C00EC5830 /* AddListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewOutput.swift; sourceTree = "<group>"; };
+		A8F0E472244B239100EC5830 /* AddListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListConfigurator.swift; sourceTree = "<group>"; };
+		A8F0E478244B2F6E00EC5830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8F0E47A244B35C300EC5830 /* UITextField+Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Done.swift"; sourceTree = "<group>"; };
+		A8F0E47C244B376100EC5830 /* UITextView+Done.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Done.swift"; sourceTree = "<group>"; };
+		A8F0E47E244B384B00EC5830 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		A8F0E480244B39CD00EC5830 /* AddListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListViewInput.swift; sourceTree = "<group>"; };
+		A8F0E483244B3F1800EC5830 /* AddListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListRouterInput.swift; sourceTree = "<group>"; };
+		A8F0E485244B3F2E00EC5830 /* AddListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListRouter.swift; sourceTree = "<group>"; };
 		BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD38D43AF365C38E8DABDFF /* Pods_stodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +193,9 @@
 				A801ADF82443C4090078225D /* String+Data.swift */,
 				A8B16A3B24479D1F00C0F5A4 /* UITableView+Identifier.swift */,
 				A8B16A3D2447A61C00C0F5A4 /* UiTableView+Nib.swift */,
+				A8F0E47A244B35C300EC5830 /* UITextField+Done.swift */,
+				A8F0E47C244B376100EC5830 /* UITextView+Done.swift */,
+				A8F0E47E244B384B00EC5830 /* UIColor+hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,7 +203,7 @@
 		A801ADFA2443C5470078225D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A84CC11B244B12B800BD5DFC /* Entity */,
+				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
 				A82D584F2443BD8E00B237F0 /* Network */,
 				A8C54F8724477E1500F9EE13 /* Service */,
 			);
@@ -207,16 +238,6 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
-		A84CC11B244B12B800BD5DFC /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				A801ADFB2443C5510078225D /* Task.swift */,
-				A801ADFD2443C55A0078225D /* List.swift */,
-				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
-			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
 		A886FF1624479C3F00EBAF2F /* tableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +251,7 @@
 		A89B2E982443950C0042983E /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				A8F0E45F244B217800EC5830 /* AddList */,
 				A89B2E992443951B0042983E /* Lists */,
 			);
 			path = "User Stories";
@@ -238,6 +260,7 @@
 		A89B2E992443951B0042983E /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				A8F0E45C244B1E1700EC5830 /* Resources */,
 				A8C54F8524477D8600F9EE13 /* Configurator */,
 				A8C54F9C2447883C00F9EE13 /* Router */,
 				A801ADFA2443C5470078225D /* Model */,
@@ -287,6 +310,7 @@
 			children = (
 				A801ADF62443C3F70078225D /* Library */,
 				A89B2E9A2443B6720042983E /* Main */,
+				A8F0E476244B2B4E00EC5830 /* Models */,
 				A89B2E982443950C0042983E /* User Stories */,
 			);
 			path = stodo;
@@ -377,6 +401,80 @@
 				A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A8F0E45C244B1E1700EC5830 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E45D244B1E3600EC5830 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8F0E45F244B217800EC5830 /* AddList */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E477244B2F5E00EC5830 /* Resources */,
+				A8F0E471244B238200EC5830 /* Configurator */,
+				A8F0E482244B3F0500EC5830 /* Router */,
+				A8F0E460244B219100EC5830 /* Presenter */,
+				A8F0E467244B221000EC5830 /* view */,
+			);
+			path = AddList;
+			sourceTree = "<group>";
+		};
+		A8F0E460244B219100EC5830 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E463244B21DF00EC5830 /* AddListModuleOutput.swift */,
+				A8F0E465244B21F200EC5830 /* AddListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A8F0E467244B221000EC5830 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E480244B39CD00EC5830 /* AddListViewInput.swift */,
+				A8F0E46E244B224C00EC5830 /* AddListViewOutput.swift */,
+				A8F0E468244B222800EC5830 /* AddListViewController.swift */,
+				A8F0E469244B222800EC5830 /* AddListViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A8F0E471244B238200EC5830 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E472244B239100EC5830 /* AddListConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A8F0E476244B2B4E00EC5830 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A801ADFB2443C5510078225D /* Task.swift */,
+				A801ADFD2443C55A0078225D /* List.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8F0E477244B2F5E00EC5830 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E478244B2F6E00EC5830 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8F0E482244B3F0500EC5830 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A8F0E483244B3F1800EC5830 /* AddListRouterInput.swift */,
+				A8F0E485244B3F2E00EC5830 /* AddListRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		E56D92E7E793A4058E5903B5 /* Pods */ = {
@@ -503,8 +601,11 @@
 			files = (
 				A8B9E900244384C9004EE028 /* LaunchScreen.storyboard in Resources */,
 				A886FF1A24479C8400EBAF2F /* ListsTableViewCell.xib in Resources */,
+				A8F0E46B244B222800EC5830 /* AddListViewController.xib in Resources */,
 				A8B9E8FD244384C9004EE028 /* Assets.xcassets in Resources */,
+				A8F0E479244B2F6E00EC5830 /* Assets.xcassets in Resources */,
 				A801AE052443C8580078225D /* ListsViewController.xib in Resources */,
+				A8F0E45E244B1E3600EC5830 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,26 +738,37 @@
 				A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */,
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
+				A8F0E481244B39CD00EC5830 /* AddListViewInput.swift in Sources */,
 				A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */,
 				A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */,
+				A8F0E484244B3F1800EC5830 /* AddListRouterInput.swift in Sources */,
 				A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */,
 				A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */,
+				A8F0E47B244B35C300EC5830 /* UITextField+Done.swift in Sources */,
+				A8F0E47D244B376100EC5830 /* UITextView+Done.swift in Sources */,
 				A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */,
+				A8F0E473244B239100EC5830 /* AddListConfigurator.swift in Sources */,
 				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
+				A8F0E47F244B384B00EC5830 /* UIColor+hex.swift in Sources */,
+				A8F0E46A244B222800EC5830 /* AddListViewController.swift in Sources */,
 				A801ADFE2443C55A0078225D /* List.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
+				A8F0E466244B21F200EC5830 /* AddListPresenter.swift in Sources */,
 				A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */,
 				A8C54F9024477F7F00F9EE13 /* ListsViewInput.swift in Sources */,
+				A8F0E46F244B224C00EC5830 /* AddListViewOutput.swift in Sources */,
 				A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */,
 				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,
 				A801ADFC2443C5510078225D /* Task.swift in Sources */,
+				A8F0E486244B3F2E00EC5830 /* AddListRouter.swift in Sources */,
 				A82D58532443BE3E00B237F0 /* Constants.swift in Sources */,
 				A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */,
 				A8C54F94244781B100F9EE13 /* ListsConfigurator.swift in Sources */,
 				A8B16A3E2447A61C00C0F5A4 /* UiTableView+Nib.swift in Sources */,
 				A8B16A3C24479D1F00C0F5A4 /* UITableView+Identifier.swift in Sources */,
 				A801AE042443C8580078225D /* ListsViewController.swift in Sources */,
+				A8F0E464244B21DF00EC5830 /* AddListModuleOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +943,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codelab.stodo;
+				PRODUCT_BUNDLE_IDENTIFIER = krista.iMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -851,7 +963,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codelab.stodo;
+				PRODUCT_BUNDLE_IDENTIFIER = krista.iMonitoring;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

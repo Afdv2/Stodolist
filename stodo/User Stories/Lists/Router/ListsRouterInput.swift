@@ -1,3 +1,4 @@
 protocol ListsRouterInput: AnyObject {
-    func showError(title: String, description: String)
+    func showErrorModule(title: String, description: String)
+    func showAddListModule(output: AddListModuleOutput?)
 }
