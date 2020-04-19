@@ -30,7 +30,7 @@ final class ListsViewController: UIViewController, ModuleTransitionable {
     private func setupView() {
         navigationController?.navigationBar.prefersLargeTitles = true
         dataSource = ListsDataSource()
-        dataSource.configure(tableView: tableView)
+        dataSource.configure(tableView: tableView, output: self)
         
         addButton.layer.cornerRadius = addButton.frame.height / 2
         
@@ -51,5 +51,11 @@ extension ListsViewController: ListsViewInput {
     func set(lists: [List]) {
         dataSource.lists = lists
         tableView.reloadData()
+    }
+}
+
+extension ListsViewController: ListsDataSourceOutput {
+    func didSelect(list: List) {
+        output?.didSelect(list: list)
     }
 }

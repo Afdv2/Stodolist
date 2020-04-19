@@ -39,6 +39,10 @@ extension ListsPresenter: ListsViewOutput {
         router?.showAddListModule(output: self)
     }
     
+    func didSelect(list: List) {
+        router?.showListModule(with: list)
+    }
+    
 }
 
 extension ListsPresenter: AddListModuleOutput {

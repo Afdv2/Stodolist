@@ -1,9 +1,11 @@
 import UIKit
 
 final class ListsDataSource: NSObject {
+    weak var output: ListsDataSourceOutput?
     var lists: [List]?
     
-    func configure(tableView: UITableView) {
+    func configure(tableView: UITableView, output: ListsDataSourceOutput?) {
+        self.output = output
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
@@ -44,5 +46,8 @@ extension ListsDataSource: UITableViewDataSource {
 
 extension ListsDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let list = lists?[indexPath.row] {
+            output?.didSelect(list: list)
+        }
     }
 }

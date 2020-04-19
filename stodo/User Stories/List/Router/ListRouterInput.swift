@@ -1,0 +1,3 @@
+protocol ListRouterInput {
+    func closeModule()
+}

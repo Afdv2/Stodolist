@@ -1,4 +1,5 @@
 final class ListsRouter: ListsRouterInput {
+    
     weak var view: ModuleTransitionable?
     
     func showErrorModule(title: String, description: String) {
@@ -8,5 +9,10 @@ final class ListsRouter: ListsRouterInput {
     func showAddListModule(output: AddListModuleOutput?) {
         let addListModule = AddListConfigurator().configure(output: output)
         view?.presentModule(addListModule, animated: true, completion: nil)
+    }
+    
+    func showListModule(with list: List) {
+        let listModule = ListConfigurator().configure(with: list, output: nil)
+        view?.showModule(listModule)
     }
 }
