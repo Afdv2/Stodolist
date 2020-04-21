@@ -12,7 +12,7 @@ final class ListsRouter: ListsRouterInput {
     }
     
     func showListModule(with list: List) {
-        let listModule = ListConfigurator().configure(with: list, output: nil)
+        let listModule = TasksConfigurator().configure(with: list, output: nil)
         view?.showModule(listModule)
     }
 }

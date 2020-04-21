@@ -1,8 +1,8 @@
 import UIKit
 import Dispatch
 
-final class ListViewController: UIViewController, ModuleTransitionable {
-    var output: ListViewOutput?
+final class TasksViewController: UIViewController, ModuleTransitionable {
+    var output: TasksViewOutput?
     var dataSource: TasksDataSource?
 
     @IBOutlet weak var tableView: UITableView!
@@ -33,12 +33,12 @@ final class ListViewController: UIViewController, ModuleTransitionable {
     }
 }
 
-extension ListViewController: ListViewInput {
+extension TasksViewController: TasksViewInput {
     func set(title: String?) {
         navigationItem.title = title
     }
     
-    func set(tasks: [Task]) {
+    func set(tasks: [Task]?) {
         dataSource?.tasks = tasks
         DispatchQueue.main.async {
             self.tableView.reloadData()

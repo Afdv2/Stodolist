@@ -1,4 +1,4 @@
-final class ListRouter: ListRouterInput {
+final class TasksRouter: TasksRouterInput {
     var view: ModuleTransitionable?
     
     func closeModule() {

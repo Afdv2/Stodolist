@@ -23,8 +23,8 @@
 		A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1424479C0100EBAF2F /* ListsDataSource.swift */; };
 		A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */; };
 		A886FF1A24479C8400EBAF2F /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */; };
-		A8B16A3C24479D1F00C0F5A4 /* UITableView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B16A3B24479D1F00C0F5A4 /* UITableView+Identifier.swift */; };
-		A8B16A3E2447A61C00C0F5A4 /* UiTableView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B16A3D2447A61C00C0F5A4 /* UiTableView+Nib.swift */; };
+		A8B16A3C24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B16A3B24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift */; };
+		A8B16A3E2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B16A3D2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift */; };
 		A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F3244384C8004EE028 /* AppDelegate.swift */; };
 		A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E8F7244384C8004EE028 /* ViewController.swift */; };
 		A8B9E8FD244384C9004EE028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B9E8FC244384C9004EE028 /* Assets.xcassets */; };
@@ -57,19 +57,21 @@
 		A8F0E486244B3F2E00EC5830 /* AddListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E485244B3F2E00EC5830 /* AddListRouter.swift */; };
 		A8F0E488244B4FC000EC5830 /* ListsDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E487244B4FC000EC5830 /* ListsDataSourceOutput.swift */; };
 		A8F0E48C244B519700EC5830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E48B244B519700EC5830 /* Assets.xcassets */; };
-		A8F0E490244B51F900EC5830 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E48E244B51F900EC5830 /* ListViewController.swift */; };
-		A8F0E491244B51F900EC5830 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E48F244B51F900EC5830 /* ListViewController.xib */; };
-		A8F0E493244B521500EC5830 /* ListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E492244B521500EC5830 /* ListViewInput.swift */; };
-		A8F0E495244B524100EC5830 /* ListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E494244B524100EC5830 /* ListViewOutput.swift */; };
-		A8F0E499244B528900EC5830 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E498244B528900EC5830 /* ListPresenter.swift */; };
-		A8F0E49B244B52A400EC5830 /* ListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49A244B52A400EC5830 /* ListModuleInput.swift */; };
-		A8F0E49D244B52BA00EC5830 /* ListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49C244B52BA00EC5830 /* ListModuleOutput.swift */; };
-		A8F0E4A0244B537B00EC5830 /* ListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49F244B537B00EC5830 /* ListRouterInput.swift */; };
-		A8F0E4A2244B538F00EC5830 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4A1244B538F00EC5830 /* ListRouter.swift */; };
-		A8F0E4A5244B548D00EC5830 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4A4244B548D00EC5830 /* ListConfigurator.swift */; };
+		A8F0E490244B51F900EC5830 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E48E244B51F900EC5830 /* TasksViewController.swift */; };
+		A8F0E491244B51F900EC5830 /* TasksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E48F244B51F900EC5830 /* TasksViewController.xib */; };
+		A8F0E493244B521500EC5830 /* TasksViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E492244B521500EC5830 /* TasksViewInput.swift */; };
+		A8F0E495244B524100EC5830 /* TasksViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E494244B524100EC5830 /* TasksViewOutput.swift */; };
+		A8F0E499244B528900EC5830 /* TasksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E498244B528900EC5830 /* TasksPresenter.swift */; };
+		A8F0E49B244B52A400EC5830 /* TasksModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49A244B52A400EC5830 /* TasksModuleInput.swift */; };
+		A8F0E49D244B52BA00EC5830 /* TasksModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49C244B52BA00EC5830 /* TasksModuleOutput.swift */; };
+		A8F0E4A0244B537B00EC5830 /* TasksRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E49F244B537B00EC5830 /* TasksRouterInput.swift */; };
+		A8F0E4A2244B538F00EC5830 /* TasksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4A1244B538F00EC5830 /* TasksRouter.swift */; };
+		A8F0E4A5244B548D00EC5830 /* TasksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4A4244B548D00EC5830 /* TasksConfigurator.swift */; };
 		A8F0E4A9244B996C00EC5830 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4A7244B996C00EC5830 /* TaskTableViewCell.swift */; };
 		A8F0E4AA244B996C00EC5830 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E4A8244B996C00EC5830 /* TaskTableViewCell.xib */; };
 		A8F0E4AC244BAD7500EC5830 /* TasksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4AB244BAD7500EC5830 /* TasksDataSource.swift */; };
+		A8F0E4AE244C8C6E00EC5830 /* TasksTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4AD244C8C6E00EC5830 /* TasksTableViewHeader.swift */; };
+		A8F0E4B0244C8F5400EC5830 /* UITableViewHeaderFooterView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E4AF244C8F5400EC5830 /* UITableViewHeaderFooterView+Identifier.swift */; };
 		FF27F1BAF72F42C1501E09A5 /* Pods_stodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,8 +114,8 @@
 		A886FF1424479C0100EBAF2F /* ListsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsDataSource.swift; sourceTree = "<group>"; };
 		A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
 		A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
-		A8B16A3B24479D1F00C0F5A4 /* UITableView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifier.swift"; sourceTree = "<group>"; };
-		A8B16A3D2447A61C00C0F5A4 /* UiTableView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableView+Nib.swift"; sourceTree = "<group>"; };
+		A8B16A3B24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		A8B16A3D2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableViewCell+Nib.swift"; sourceTree = "<group>"; };
 		A8B9E8F0244384C8004EE028 /* stodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E8F3244384C8004EE028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B9E8F7244384C8004EE028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,19 +154,21 @@
 		A8F0E485244B3F2E00EC5830 /* AddListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListRouter.swift; sourceTree = "<group>"; };
 		A8F0E487244B4FC000EC5830 /* ListsDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsDataSourceOutput.swift; sourceTree = "<group>"; };
 		A8F0E48B244B519700EC5830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A8F0E48E244B51F900EC5830 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		A8F0E48F244B51F900EC5830 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
-		A8F0E492244B521500EC5830 /* ListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewInput.swift; sourceTree = "<group>"; };
-		A8F0E494244B524100EC5830 /* ListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewOutput.swift; sourceTree = "<group>"; };
-		A8F0E498244B528900EC5830 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
-		A8F0E49A244B52A400EC5830 /* ListModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModuleInput.swift; sourceTree = "<group>"; };
-		A8F0E49C244B52BA00EC5830 /* ListModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModuleOutput.swift; sourceTree = "<group>"; };
-		A8F0E49F244B537B00EC5830 /* ListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterInput.swift; sourceTree = "<group>"; };
-		A8F0E4A1244B538F00EC5830 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
-		A8F0E4A4244B548D00EC5830 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
+		A8F0E48E244B51F900EC5830 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		A8F0E48F244B51F900EC5830 /* TasksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksViewController.xib; sourceTree = "<group>"; };
+		A8F0E492244B521500EC5830 /* TasksViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewInput.swift; sourceTree = "<group>"; };
+		A8F0E494244B524100EC5830 /* TasksViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewOutput.swift; sourceTree = "<group>"; };
+		A8F0E498244B528900EC5830 /* TasksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksPresenter.swift; sourceTree = "<group>"; };
+		A8F0E49A244B52A400EC5830 /* TasksModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModuleInput.swift; sourceTree = "<group>"; };
+		A8F0E49C244B52BA00EC5830 /* TasksModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksModuleOutput.swift; sourceTree = "<group>"; };
+		A8F0E49F244B537B00EC5830 /* TasksRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRouterInput.swift; sourceTree = "<group>"; };
+		A8F0E4A1244B538F00EC5830 /* TasksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRouter.swift; sourceTree = "<group>"; };
+		A8F0E4A4244B548D00EC5830 /* TasksConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksConfigurator.swift; sourceTree = "<group>"; };
 		A8F0E4A7244B996C00EC5830 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A8F0E4A8244B996C00EC5830 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		A8F0E4AB244BAD7500EC5830 /* TasksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataSource.swift; sourceTree = "<group>"; };
+		A8F0E4AD244C8C6E00EC5830 /* TasksTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewHeader.swift; sourceTree = "<group>"; };
+		A8F0E4AF244C8F5400EC5830 /* UITableViewHeaderFooterView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Identifier.swift"; sourceTree = "<group>"; };
 		BFAE8BCBF5A27961AD9AA5FC /* Pods_stodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD38D43AF365C38E8DABDFF /* Pods_stodoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -221,8 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				A801ADF82443C4090078225D /* String+Data.swift */,
-				A8B16A3B24479D1F00C0F5A4 /* UITableView+Identifier.swift */,
-				A8B16A3D2447A61C00C0F5A4 /* UiTableView+Nib.swift */,
+				A8B16A3B24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift */,
+				A8B16A3D2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift */,
+				A8F0E4AF244C8F5400EC5830 /* UITableViewHeaderFooterView+Identifier.swift */,
 				A8F0E47A244B35C300EC5830 /* UITextField+Done.swift */,
 				A8F0E47C244B376100EC5830 /* UITextView+Done.swift */,
 				A8F0E47E244B384B00EC5830 /* UIColor+hex.swift */,
@@ -284,7 +289,7 @@
 			children = (
 				A8F0E45F244B217800EC5830 /* AddList */,
 				A89B2E992443951B0042983E /* Lists */,
-				A8F0E489244B515E00EC5830 /* List */,
+				A8F0E489244B515E00EC5830 /* Tasks */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
@@ -509,7 +514,7 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		A8F0E489244B515E00EC5830 /* List */ = {
+		A8F0E489244B515E00EC5830 /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
 				A8F0E48A244B518B00EC5830 /* Resources */,
@@ -518,7 +523,7 @@
 				A8F0E497244B527C00EC5830 /* Presenter */,
 				A8F0E48D244B51E400EC5830 /* view */,
 			);
-			path = List;
+			path = Tasks;
 			sourceTree = "<group>";
 		};
 		A8F0E48A244B518B00EC5830 /* Resources */ = {
@@ -533,10 +538,10 @@
 			isa = PBXGroup;
 			children = (
 				A8F0E4A6244B995500EC5830 /* tableView */,
-				A8F0E492244B521500EC5830 /* ListViewInput.swift */,
-				A8F0E494244B524100EC5830 /* ListViewOutput.swift */,
-				A8F0E48E244B51F900EC5830 /* ListViewController.swift */,
-				A8F0E48F244B51F900EC5830 /* ListViewController.xib */,
+				A8F0E492244B521500EC5830 /* TasksViewInput.swift */,
+				A8F0E494244B524100EC5830 /* TasksViewOutput.swift */,
+				A8F0E48E244B51F900EC5830 /* TasksViewController.swift */,
+				A8F0E48F244B51F900EC5830 /* TasksViewController.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -544,9 +549,9 @@
 		A8F0E497244B527C00EC5830 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0E49A244B52A400EC5830 /* ListModuleInput.swift */,
-				A8F0E49C244B52BA00EC5830 /* ListModuleOutput.swift */,
-				A8F0E498244B528900EC5830 /* ListPresenter.swift */,
+				A8F0E49A244B52A400EC5830 /* TasksModuleInput.swift */,
+				A8F0E49C244B52BA00EC5830 /* TasksModuleOutput.swift */,
+				A8F0E498244B528900EC5830 /* TasksPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -554,8 +559,8 @@
 		A8F0E49E244B536B00EC5830 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0E49F244B537B00EC5830 /* ListRouterInput.swift */,
-				A8F0E4A1244B538F00EC5830 /* ListRouter.swift */,
+				A8F0E49F244B537B00EC5830 /* TasksRouterInput.swift */,
+				A8F0E4A1244B538F00EC5830 /* TasksRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -563,7 +568,7 @@
 		A8F0E4A3244B547600EC5830 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0E4A4244B548D00EC5830 /* ListConfigurator.swift */,
+				A8F0E4A4244B548D00EC5830 /* TasksConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -571,9 +576,10 @@
 		A8F0E4A6244B995500EC5830 /* tableView */ = {
 			isa = PBXGroup;
 			children = (
-				A8F0E4AB244BAD7500EC5830 /* TasksDataSource.swift */,
 				A8F0E4A7244B996C00EC5830 /* TaskTableViewCell.swift */,
 				A8F0E4A8244B996C00EC5830 /* TaskTableViewCell.xib */,
+				A8F0E4AD244C8C6E00EC5830 /* TasksTableViewHeader.swift */,
+				A8F0E4AB244BAD7500EC5830 /* TasksDataSource.swift */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -706,7 +712,7 @@
 				A8B9E8FD244384C9004EE028 /* Assets.xcassets in Resources */,
 				A8F0E4AA244B996C00EC5830 /* TaskTableViewCell.xib in Resources */,
 				A8F0E479244B2F6E00EC5830 /* Assets.xcassets in Resources */,
-				A8F0E491244B51F900EC5830 /* ListViewController.xib in Resources */,
+				A8F0E491244B51F900EC5830 /* TasksViewController.xib in Resources */,
 				A801AE052443C8580078225D /* ListsViewController.xib in Resources */,
 				A8F0E48C244B519700EC5830 /* Assets.xcassets in Resources */,
 				A8F0E45E244B1E3600EC5830 /* Assets.xcassets in Resources */,
@@ -837,17 +843,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F0E4A5244B548D00EC5830 /* ListConfigurator.swift in Sources */,
+				A8F0E4A5244B548D00EC5830 /* TasksConfigurator.swift in Sources */,
 				A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */,
 				A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */,
 				A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */,
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
-				A8F0E499244B528900EC5830 /* ListPresenter.swift in Sources */,
+				A8F0E4AE244C8C6E00EC5830 /* TasksTableViewHeader.swift in Sources */,
+				A8F0E499244B528900EC5830 /* TasksPresenter.swift in Sources */,
 				A8F0E481244B39CD00EC5830 /* AddListViewInput.swift in Sources */,
 				A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */,
 				A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */,
-				A8F0E490244B51F900EC5830 /* ListViewController.swift in Sources */,
+				A8F0E490244B51F900EC5830 /* TasksViewController.swift in Sources */,
 				A8F0E484244B3F1800EC5830 /* AddListRouterInput.swift in Sources */,
 				A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */,
 				A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */,
@@ -856,8 +863,8 @@
 				A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */,
 				A8F0E4AC244BAD7500EC5830 /* TasksDataSource.swift in Sources */,
 				A8F0E488244B4FC000EC5830 /* ListsDataSourceOutput.swift in Sources */,
-				A8F0E4A0244B537B00EC5830 /* ListRouterInput.swift in Sources */,
-				A8F0E4A2244B538F00EC5830 /* ListRouter.swift in Sources */,
+				A8F0E4A0244B537B00EC5830 /* TasksRouterInput.swift in Sources */,
+				A8F0E4A2244B538F00EC5830 /* TasksRouter.swift in Sources */,
 				A8F0E473244B239100EC5830 /* AddListConfigurator.swift in Sources */,
 				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
 				A8F0E4A9244B996C00EC5830 /* TaskTableViewCell.swift in Sources */,
@@ -866,23 +873,24 @@
 				A801ADFE2443C55A0078225D /* List.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
 				A8F0E466244B21F200EC5830 /* AddListPresenter.swift in Sources */,
-				A8F0E495244B524100EC5830 /* ListViewOutput.swift in Sources */,
+				A8F0E495244B524100EC5830 /* TasksViewOutput.swift in Sources */,
+				A8F0E4B0244C8F5400EC5830 /* UITableViewHeaderFooterView+Identifier.swift in Sources */,
 				A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */,
 				A8C54F9024477F7F00F9EE13 /* ListsViewInput.swift in Sources */,
-				A8F0E49D244B52BA00EC5830 /* ListModuleOutput.swift in Sources */,
+				A8F0E49D244B52BA00EC5830 /* TasksModuleOutput.swift in Sources */,
 				A8F0E46F244B224C00EC5830 /* AddListViewOutput.swift in Sources */,
 				A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */,
-				A8F0E493244B521500EC5830 /* ListViewInput.swift in Sources */,
+				A8F0E493244B521500EC5830 /* TasksViewInput.swift in Sources */,
 				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,
-				A8F0E49B244B52A400EC5830 /* ListModuleInput.swift in Sources */,
+				A8F0E49B244B52A400EC5830 /* TasksModuleInput.swift in Sources */,
 				A801ADFC2443C5510078225D /* Task.swift in Sources */,
 				A8F0E486244B3F2E00EC5830 /* AddListRouter.swift in Sources */,
 				A82D58532443BE3E00B237F0 /* Constants.swift in Sources */,
 				A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */,
 				A8C54F94244781B100F9EE13 /* ListsConfigurator.swift in Sources */,
-				A8B16A3E2447A61C00C0F5A4 /* UiTableView+Nib.swift in Sources */,
-				A8B16A3C24479D1F00C0F5A4 /* UITableView+Identifier.swift in Sources */,
+				A8B16A3E2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift in Sources */,
+				A8B16A3C24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift in Sources */,
 				A801AE042443C8580078225D /* ListsViewController.swift in Sources */,
 				A8F0E464244B21DF00EC5830 /* AddListModuleOutput.swift in Sources */,
 			);

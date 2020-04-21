@@ -9,7 +9,6 @@ final class ListsDataSource: NSObject {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()

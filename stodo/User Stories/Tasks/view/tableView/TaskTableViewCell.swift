@@ -9,7 +9,7 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func configure(with task: Task) {
-        if let status = task.status, status {
+        if task.status {
             configureForCompletedTask(task)
         } else {
             configureForUncompletedTask(task)
@@ -23,8 +23,10 @@ class TaskTableViewCell: UITableViewCell {
     
     func configureForCompletedTask(_ task: Task) {
         if let title = task.title {
+            let color = UIColor(red: 0.54, green: 0.58, blue: 0.65, alpha: 1)
             let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: title)
             attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+            attributeString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSMakeRange(0, attributeString.length))
             titleLabel.attributedText = attributeString
         }
         
