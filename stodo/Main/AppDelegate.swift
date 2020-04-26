@@ -21,16 +21,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = rootViewController
         return true
     }
-    
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "stodoModel")
-        container.loadPersistentStores { (description, error) in
-            if let error = error {
-                fatalError("Unable to load persistent stores: \(error)")
-            }
-        }
-        
-        return container
-    }()
 }
 

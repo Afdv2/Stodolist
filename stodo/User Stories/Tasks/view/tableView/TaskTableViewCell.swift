@@ -22,14 +22,11 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func configureForCompletedTask(_ task: Task) {
-        if let title = task.title {
-            let color = UIColor(red: 0.54, green: 0.58, blue: 0.65, alpha: 1)
-            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: title)
-            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-            attributeString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSMakeRange(0, attributeString.length))
-            titleLabel.attributedText = attributeString
-        }
-        
+        let color = UIColor(red: 0.54, green: 0.58, blue: 0.65, alpha: 1)
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: task.title)
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        attributeString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: NSMakeRange(0, attributeString.length))
+        titleLabel.attributedText = attributeString
         statusImage.image = UIImage(named: "checked")
     }
 }

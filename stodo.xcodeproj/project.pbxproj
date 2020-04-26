@@ -10,16 +10,19 @@
 		0008E92F550F0EF11A062D9C /* Pods_stodo_stodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBED0B6F0DE2E9D35C7053B /* Pods_stodo_stodoUITests.framework */; };
 		275CDD6A4F0260EA25B57850 /* Pods_stodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD38D43AF365C38E8DABDFF /* Pods_stodoTests.framework */; };
 		A801ADF92443C4090078225D /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADF82443C4090078225D /* String+Data.swift */; };
-		A801ADFC2443C5510078225D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFB2443C5510078225D /* Task.swift */; };
-		A801ADFE2443C55A0078225D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFD2443C55A0078225D /* List.swift */; };
 		A801AE002443C5F20078225D /* ListsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801ADFF2443C5F20078225D /* ListsResponse.swift */; };
 		A801AE042443C8580078225D /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A801AE022443C8580078225D /* ListsViewController.swift */; };
 		A801AE052443C8580078225D /* ListsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A801AE032443C8580078225D /* ListsViewController.xib */; };
+		A8149B672454775700B206E0 /* TaskDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8149B662454775700B206E0 /* TaskDataStore.swift */; };
+		A8149B692454781600B206E0 /* TaskCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8149B682454781600B206E0 /* TaskCoreDataStore.swift */; };
+		A82678C224548A9B003268B2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82678C124548A9B003268B2 /* CoreDataManager.swift */; };
 		A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58502443BD9F00B237F0 /* ListsAPI.swift */; };
 		A82D58532443BE3E00B237F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82D58522443BE3E00B237F0 /* Constants.swift */; };
 		A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */; };
 		A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBC2444E37C007C0BEB /* ListsService.swift */; };
 		A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */; };
+		A881C9C0244F982600A2EED8 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9BF244F982600A2EED8 /* ListResponse.swift */; };
+		A881C9C2244F984000A2EED8 /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9C1244F984000A2EED8 /* TaskResponse.swift */; };
 		A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1424479C0100EBAF2F /* ListsDataSource.swift */; };
 		A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */; };
 		A886FF1A24479C8400EBAF2F /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */; };
@@ -41,6 +44,13 @@
 		A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */; };
 		A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F9F2447887800F9EE13 /* ListsRouter.swift */; };
 		A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */; };
+		A8DEE6912451F96D006136C6 /* List+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE68D2451F96D006136C6 /* List+CoreDataClass.swift */; };
+		A8DEE6922451F96D006136C6 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE68E2451F96D006136C6 /* Task+CoreDataClass.swift */; };
+		A8DEE6932451F96D006136C6 /* List+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE68F2451F96D006136C6 /* List+CoreDataProperties.swift */; };
+		A8DEE6942451F96D006136C6 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DEE6902451F96D006136C6 /* Task+CoreDataProperties.swift */; };
+		A8ED3F7A244F62B500926440 /* stodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8ED3F78244F62B500926440 /* stodo.xcdatamodeld */; };
+		A8ED3F7D244F87C900926440 /* ListDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ED3F7C244F87C900926440 /* ListDataStore.swift */; };
+		A8ED3F7F244F88C200926440 /* ListCoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ED3F7E244F88C200926440 /* ListCoreDataStore.swift */; };
 		A8F0E45E244B1E3600EC5830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8F0E45D244B1E3600EC5830 /* Assets.xcassets */; };
 		A8F0E464244B21DF00EC5830 /* AddListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E463244B21DF00EC5830 /* AddListModuleOutput.swift */; };
 		A8F0E466244B21F200EC5830 /* AddListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0E465244B21F200EC5830 /* AddListPresenter.swift */; };
@@ -101,16 +111,19 @@
 		9DBED0B6F0DE2E9D35C7053B /* Pods_stodo_stodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stodo_stodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CFE2CA162DB243D86B8ECA /* Pods-stodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stodoTests.debug.xcconfig"; path = "Target Support Files/Pods-stodoTests/Pods-stodoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A801ADF82443C4090078225D /* String+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
-		A801ADFB2443C5510078225D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		A801ADFD2443C55A0078225D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		A801ADFF2443C5F20078225D /* ListsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsResponse.swift; sourceTree = "<group>"; };
 		A801AE022443C8580078225D /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
 		A801AE032443C8580078225D /* ListsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsViewController.xib; sourceTree = "<group>"; };
+		A8149B662454775700B206E0 /* TaskDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDataStore.swift; sourceTree = "<group>"; };
+		A8149B682454781600B206E0 /* TaskCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCoreDataStore.swift; sourceTree = "<group>"; };
+		A82678C124548A9B003268B2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A82D58502443BD9F00B237F0 /* ListsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsAPI.swift; sourceTree = "<group>"; };
 		A82D58522443BE3E00B237F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsServiceProtocol.swift; sourceTree = "<group>"; };
 		A83A2CBC2444E37C007C0BEB /* ListsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsService.swift; sourceTree = "<group>"; };
 		A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataError.swift; sourceTree = "<group>"; };
+		A881C9BF244F982600A2EED8 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		A881C9C1244F984000A2EED8 /* TaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
 		A886FF1424479C0100EBAF2F /* ListsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsDataSource.swift; sourceTree = "<group>"; };
 		A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
 		A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
@@ -138,6 +151,13 @@
 		A8C54F9D2447885C00F9EE13 /* ListsRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouterInput.swift; sourceTree = "<group>"; };
 		A8C54F9F2447887800F9EE13 /* ListsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouter.swift; sourceTree = "<group>"; };
 		A8C54FA2244788E600F9EE13 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		A8DEE68D2451F96D006136C6 /* List+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A8DEE68E2451F96D006136C6 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A8DEE68F2451F96D006136C6 /* List+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A8DEE6902451F96D006136C6 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A8ED3F79244F62B500926440 /* stodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = stodo.xcdatamodel; sourceTree = "<group>"; };
+		A8ED3F7C244F87C900926440 /* ListDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataStore.swift; sourceTree = "<group>"; };
+		A8ED3F7E244F88C200926440 /* ListCoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoreDataStore.swift; sourceTree = "<group>"; };
 		A8F0E45D244B1E3600EC5830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F0E463244B21DF00EC5830 /* AddListModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListModuleOutput.swift; sourceTree = "<group>"; };
 		A8F0E465244B21F200EC5830 /* AddListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListPresenter.swift; sourceTree = "<group>"; };
@@ -214,6 +234,7 @@
 		A801ADF62443C3F70078225D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				A82678C424558FA1003268B2 /* DataStore */,
 				A8C54FA1244788D300F9EE13 /* Protocols */,
 				A83A2CC62444F39B007C0BEB /* Errors */,
 				A801ADF72443C3FD0078225D /* Extensions */,
@@ -239,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
+				A881C9BF244F982600A2EED8 /* ListResponse.swift */,
+				A881C9C1244F984000A2EED8 /* TaskResponse.swift */,
 				A82D584F2443BD8E00B237F0 /* Network */,
 				A8C54F8724477E1500F9EE13 /* Service */,
 			);
@@ -255,6 +278,27 @@
 				A801AE032443C8580078225D /* ListsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A82678C324558F6A003268B2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A8ED3F7B244F87B800926440 /* DataStore */,
+				A8DEE68D2451F96D006136C6 /* List+CoreDataClass.swift */,
+				A8DEE68F2451F96D006136C6 /* List+CoreDataProperties.swift */,
+				A8DEE68E2451F96D006136C6 /* Task+CoreDataClass.swift */,
+				A8DEE6902451F96D006136C6 /* Task+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A82678C424558FA1003268B2 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				A8ED3F7C244F87C900926440 /* ListDataStore.swift */,
+				A8149B662454775700B206E0 /* TaskDataStore.swift */,
+			);
+			path = DataStore;
 			sourceTree = "<group>";
 		};
 		A82D584F2443BD8E00B237F0 /* Network */ = {
@@ -440,6 +484,16 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		A8ED3F7B244F87B800926440 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				A8ED3F7E244F88C200926440 /* ListCoreDataStore.swift */,
+				A8149B682454781600B206E0 /* TaskCoreDataStore.swift */,
+				A82678C124548A9B003268B2 /* CoreDataManager.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
 		A8F0E45C244B1E1700EC5830 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,8 +545,8 @@
 		A8F0E476244B2B4E00EC5830 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A801ADFB2443C5510078225D /* Task.swift */,
-				A801ADFD2443C55A0078225D /* List.swift */,
+				A82678C324558F6A003268B2 /* CoreData */,
+				A8ED3F78244F62B500926440 /* stodo.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -847,17 +901,23 @@
 				A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */,
 				A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */,
 				A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */,
+				A881C9C2244F984000A2EED8 /* TaskResponse.swift in Sources */,
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
+				A8DEE6912451F96D006136C6 /* List+CoreDataClass.swift in Sources */,
 				A8F0E4AE244C8C6E00EC5830 /* TasksTableViewHeader.swift in Sources */,
 				A8F0E499244B528900EC5830 /* TasksPresenter.swift in Sources */,
 				A8F0E481244B39CD00EC5830 /* AddListViewInput.swift in Sources */,
 				A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */,
 				A8C54FA3244788E600F9EE13 /* ModuleTransitionable.swift in Sources */,
+				A82678C224548A9B003268B2 /* CoreDataManager.swift in Sources */,
 				A8F0E490244B51F900EC5830 /* TasksViewController.swift in Sources */,
 				A8F0E484244B3F1800EC5830 /* AddListRouterInput.swift in Sources */,
+				A8ED3F7D244F87C900926440 /* ListDataStore.swift in Sources */,
 				A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */,
+				A8ED3F7A244F62B500926440 /* stodo.xcdatamodeld in Sources */,
 				A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */,
+				A8DEE6942451F96D006136C6 /* Task+CoreDataProperties.swift in Sources */,
 				A8F0E47B244B35C300EC5830 /* UITextField+Done.swift in Sources */,
 				A8F0E47D244B376100EC5830 /* UITextView+Done.swift in Sources */,
 				A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */,
@@ -866,11 +926,12 @@
 				A8F0E4A0244B537B00EC5830 /* TasksRouterInput.swift in Sources */,
 				A8F0E4A2244B538F00EC5830 /* TasksRouter.swift in Sources */,
 				A8F0E473244B239100EC5830 /* AddListConfigurator.swift in Sources */,
+				A8149B672454775700B206E0 /* TaskDataStore.swift in Sources */,
 				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
 				A8F0E4A9244B996C00EC5830 /* TaskTableViewCell.swift in Sources */,
 				A8F0E47F244B384B00EC5830 /* UIColor+hex.swift in Sources */,
+				A8ED3F7F244F88C200926440 /* ListCoreDataStore.swift in Sources */,
 				A8F0E46A244B222800EC5830 /* AddListViewController.swift in Sources */,
-				A801ADFE2443C55A0078225D /* List.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
 				A8F0E466244B21F200EC5830 /* AddListPresenter.swift in Sources */,
 				A8F0E495244B524100EC5830 /* TasksViewOutput.swift in Sources */,
@@ -880,11 +941,13 @@
 				A8F0E49D244B52BA00EC5830 /* TasksModuleOutput.swift in Sources */,
 				A8F0E46F244B224C00EC5830 /* AddListViewOutput.swift in Sources */,
 				A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */,
+				A8DEE6922451F96D006136C6 /* Task+CoreDataClass.swift in Sources */,
+				A881C9C0244F982600A2EED8 /* ListResponse.swift in Sources */,
 				A8F0E493244B521500EC5830 /* TasksViewInput.swift in Sources */,
 				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,
 				A8F0E49B244B52A400EC5830 /* TasksModuleInput.swift in Sources */,
-				A801ADFC2443C5510078225D /* Task.swift in Sources */,
+				A8DEE6932451F96D006136C6 /* List+CoreDataProperties.swift in Sources */,
 				A8F0E486244B3F2E00EC5830 /* AddListRouter.swift in Sources */,
 				A82D58532443BE3E00B237F0 /* Constants.swift in Sources */,
 				A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */,
@@ -893,6 +956,7 @@
 				A8B16A3C24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift in Sources */,
 				A801AE042443C8580078225D /* ListsViewController.swift in Sources */,
 				A8F0E464244B21DF00EC5830 /* AddListModuleOutput.swift in Sources */,
+				A8149B692454781600B206E0 /* TaskCoreDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1222,6 +1286,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A8ED3F78244F62B500926440 /* stodo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8ED3F79244F62B500926440 /* stodo.xcdatamodel */,
+			);
+			currentVersion = A8ED3F79244F62B500926440 /* stodo.xcdatamodel */;
+			path = stodo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A8B9E8E8244384C8004EE028 /* Project object */;
 }

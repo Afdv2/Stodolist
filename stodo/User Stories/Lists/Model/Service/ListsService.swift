@@ -8,18 +8,14 @@ struct ListsService: ListsServiceProtocol {
         self.listsProvider = listsProvider
     }
     
-    func getLists(_ completion: @escaping (Result<[List], Error>) -> Void) {
+    func getLists(_ completion: @escaping (Result<ListsResponse, Error>) -> Void) {
         listsProvider.request(.all) { result in
             switch result {
             case .success(let response):
                 do {
                     let jsonDecoder = JSONDecoder()
                     let listsResponse = try jsonDecoder.decode(ListsResponse.self, from: response.data)
-                    guard let lists = listsResponse.lists else {
-                        completion(.failure(LoadingDataError.emptyData))
-                        return
-                    }
-                    completion(.success(lists))
+                    completion(.success(listsResponse))
                 } catch {
                     completion(.failure(LoadingDataError.decode(error.localizedDescription)))
                 }
@@ -29,22 +25,34 @@ struct ListsService: ListsServiceProtocol {
         }
     }
     
-    func putList(list: List, _ completion: @escaping (Result<List, Error>) -> Void) {
+    func putList(list: List, _ completion: @escaping (Result<ListResponse, Error>) -> Void) {
         listsProvider.request(.put(list: list)) { result in
             switch result {
-            case .success:
-                completion(.success(list))
+            case .success(let response):
+                do {
+                let jsonDecoder = JSONDecoder()
+                let listResponse = try jsonDecoder.decode(ListResponse.self, from: response.data)
+                    completion(.success(listResponse))
+                } catch {
+                    completion(.failure(LoadingDataError.decode(error.localizedDescription)))
+                }
             case .failure(let error):
                 completion(.failure(LoadingDataError.loading(error.localizedDescription)))
             }
         }
     }
     
-    func deleteList(id: String, _ completion: @escaping (Result<String, Error>) -> Void) {
+    func deleteList(id: String, _ completion: @escaping (Result<ListResponse, Error>) -> Void) {
         listsProvider.request(.delete(id: id)) { result in
             switch result {
-            case .success:
-                completion(.success(id))
+            case .success(let response):
+                do {
+                    let jsonDecoder = JSONDecoder()
+                    let listResponse = try jsonDecoder.decode(ListResponse.self, from: response.data)
+                    completion(.success(listResponse))
+                } catch {
+                    completion(.failure(LoadingDataError.decode(error.localizedDescription)))
+                }
             case .failure(let error):
                 completion(.failure(LoadingDataError.loading(error.localizedDescription)))
             }

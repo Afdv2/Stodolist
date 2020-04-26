@@ -11,9 +11,9 @@ extension AddListPresenter: AddListViewOutput {
             return
         }
         
-        var list = List()
+        let list = List()
         list.title = title
-        list.description = description
+        list.summary = description ?? ""
         
         output?.didAdd(list: list)
         router?.closeModule()

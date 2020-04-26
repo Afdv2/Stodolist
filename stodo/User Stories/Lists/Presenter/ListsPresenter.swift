@@ -5,6 +5,8 @@ final class ListsPresenter: ListsModuleInput {
     var output: ListsModuleOutput?
     var router: ListsRouterInput?
     var service: ListsServiceProtocol?
+    var listDataStore: ListDataStore?
+    var taskDataStore: TaskDataStore?
     var lists: [List] = [] {
         didSet {
             view?.set(lists: lists)
@@ -15,24 +17,50 @@ final class ListsPresenter: ListsModuleInput {
         view?.set(title: title)
     }
     
-    private func loadLists() {
-        service?.getLists({ [weak self] result in
-            guard let self = self else { return }
+    private func loadLocalLists() {
+        if let lists = listDataStore?.get() {
+            self.lists = lists
+        }
+    }
+    
+    private func fetchRemoteLists() {
+        service?.getLists({ result in
             switch result {
-            case .success(let lists):
-                self.lists.removeAll()
-                self.lists.append(contentsOf: lists)
+            case .success(let listsResponse):
+                self.saveLists(listsResponse)
+                self.loadLocalLists()
             case .failure(let error):
                 self.router?.showErrorModule(title: "Ошибка загрузки проектов", description: error.localizedDescription)
             }
         })
+    }
+    
+    private func saveLists(_ listsResponse: ListsResponse?) {
+        guard let listsResponse = listsResponse, let lists = listsResponse.lists else {
+            return
+        }
+        
+        listDataStore?.put(listResponses: lists)
+        
+        for list in lists {
+            saveRemoteTasks(listGUID: list.guid, taskResponses: list.tasks)
+        }
+    }
+    
+    private func saveRemoteTasks(listGUID: String, taskResponses: [TaskResponse]?) {
+        guard let taskResponses = taskResponses else {
+            return
+        }
+        
+        taskDataStore?.put(taskResponses: taskResponses, with: listGUID)
     }
 }
 
 extension ListsPresenter: ListsViewOutput {
     func viewLoaded() {
         set(title: "Projects")
-        loadLists()
+        loadLocalLists()
+        fetchRemoteLists()
     }
     
     func didTapAddList() {

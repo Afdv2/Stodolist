@@ -14,7 +14,12 @@ final class ListsConfigurator {
         }
         let service = ListsService(listsProvider: provider)
         
+        let listDataStore = ListCoreDataStore()
+        let taskDataStore = TaskCoreDataStore()
+        
         presenter.view = view
+        presenter.listDataStore = listDataStore
+        presenter.taskDataStore = taskDataStore
         presenter.router = router
         presenter.output = output
         presenter.service = service

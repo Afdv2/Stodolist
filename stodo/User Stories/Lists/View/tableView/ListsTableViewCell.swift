@@ -16,7 +16,8 @@ class ListsTableViewCell: UITableViewCell {
     
     func configure(list: List) {
         titleLabel.text = list.title
-        descriptionLabel.text = list.description
+        descriptionLabel.text = list.summary
+        progressLabel.text = String(describing: list.tasks.count)
     }
     
 }
