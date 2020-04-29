@@ -3,6 +3,7 @@ import UIKit
 final class TasksTableViewHeader: UITableViewHeaderFooterView {
     let titleLabel: UILabel = UILabel()
     let addTaskTextField: UITextField = UITextField()
+    weak var output: TaskTableViewHeaderOutput?
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
@@ -39,6 +40,7 @@ final class TasksTableViewHeader: UITableViewHeaderFooterView {
         addTaskTextField.leftViewMode = .always
         addTaskTextField.placeholder = "+ Добавить todo"
         addTaskTextField.doneAccessory = true
+        addTaskTextField.delegate = self
         
         contentView.addSubview(titleLabel)
         contentView.addSubview(addTaskTextField)
@@ -54,5 +56,24 @@ final class TasksTableViewHeader: UITableViewHeaderFooterView {
             addTaskTextField.heightAnchor.constraint(equalToConstant: 40),
             addTaskTextField.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: 8)
         ])
+    }
+    
+    private func didAddTask(with title: String?) {
+        if let title = title {
+            output?.didAddTask(with: title)
+        }
+    }
+}
+
+
+extension TasksTableViewHeader: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        didAddTask(with: textField.text)
+        textField.text = ""
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

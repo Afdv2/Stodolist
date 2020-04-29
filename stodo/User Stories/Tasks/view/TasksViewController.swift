@@ -3,7 +3,7 @@ import Dispatch
 
 final class TasksViewController: UIViewController, ModuleTransitionable {
     var output: TasksViewOutput?
-    var dataSource: TasksDataSource?
+    var dataSource: TasksDataSource!
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -25,6 +25,7 @@ final class TasksViewController: UIViewController, ModuleTransitionable {
         navigationItem.leftBarButtonItem = leftBarButtonItem
 
         dataSource = TasksDataSource(tableView: tableView)
+        dataSource.output = self
     }
     
     @objc
@@ -39,9 +40,15 @@ extension TasksViewController: TasksViewInput {
     }
     
     func set(tasks: [Task]?) {
-        dataSource?.tasks = tasks
+        dataSource.tasks = tasks
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+extension TasksViewController: TasksDataSourceOutput {
+    func didAddTask(with title: String) {
+        output?.didAddTask(with: title)
     }
 }

@@ -1,2 +1,3 @@
 protocol TasksModuleOutput {
+    func didAddTask()
 }

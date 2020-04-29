@@ -17,6 +17,7 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     func configureForUncompletedTask(_ task: Task) {
+        titleLabel.attributedText = nil
         titleLabel.text = task.title
         statusImage.image = UIImage(named: "unchecked")
     }

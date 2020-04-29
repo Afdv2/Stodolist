@@ -3,6 +3,7 @@ import UIKit
 final class TasksDataSource: NSObject {
     var tasks: [Task]?
     let tableView: UITableView
+    weak var output: TasksDataSourceOutput?
     
     init(tableView: UITableView) {
         self.tableView = tableView
@@ -52,8 +53,15 @@ extension TasksDataSource: UITableViewDelegate {
             return nil
         }
         
+        taskTableHeader.output = self
         taskTableHeader.configure(tasks: tasks)
         
         return taskTableHeader
+    }
+}
+
+extension TasksDataSource: TaskTableViewHeaderOutput {
+    func didAddTask(with title: String) {
+        output?.didAddTask(with: title)
     }
 }

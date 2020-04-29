@@ -67,7 +67,7 @@ extension ListsPresenter: ListsViewOutput {
     
     func didSelectList(index: Int) {
         let list = lists[index]
-        router?.showListModule(with: list)
+        router?.showListModule(with: list, output: self)
     }
 }
 
@@ -75,6 +75,12 @@ extension ListsPresenter: AddListModuleOutput {
     func didAddList(title: String, description: String?) {
         let listResponse = RemoteList(title: title, summary: description)
         save(lists: [listResponse])
+        loadLocalLists()
+    }
+}
+
+extension ListsPresenter: TasksModuleOutput {
+    func didAddTask() {
         loadLocalLists()
     }
 }

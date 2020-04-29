@@ -40,6 +40,11 @@ extension TaskCoreDataStore: TaskDataStore {
         saveContext()
     }
     
+    func put(title: String, with listGuid: String) {
+        let remoteTask = RemoteTask(title: title)
+        put(taskResponse: remoteTask, with: listGuid)
+    }
+    
     func put(taskResponses: [RemoteTask], with listGuid: String) {
         for taskResponse in taskResponses {
             let newTask = Task(context: container.viewContext)

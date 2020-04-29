@@ -34,6 +34,8 @@
 		A8B9E900244384C9004EE028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8B9E8FE244384C9004EE028 /* LaunchScreen.storyboard */; };
 		A8B9E90B244384CA004EE028 /* stodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E90A244384CA004EE028 /* stodoTests.swift */; };
 		A8B9E916244384CA004EE028 /* stodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E915244384CA004EE028 /* stodoUITests.swift */; };
+		A8BE82CC2459F1FD0069CF8C /* TaskTableViewHeaderOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE82CB2459F1FD0069CF8C /* TaskTableViewHeaderOutput.swift */; };
+		A8BE82CE2459F3570069CF8C /* TasksDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE82CD2459F3570069CF8C /* TasksDataSourceOutput.swift */; };
 		A8C54F8A24477EA700F9EE13 /* ListsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8924477EA700F9EE13 /* ListsModuleInput.swift */; };
 		A8C54F8C24477EC900F9EE13 /* ListsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8B24477EC900F9EE13 /* ListsModuleOutput.swift */; };
 		A8C54F8E24477EE200F9EE13 /* ListsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C54F8D24477EE200F9EE13 /* ListsPresenter.swift */; };
@@ -141,6 +143,8 @@
 		A8B9E911244384CA004EE028 /* stodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E915244384CA004EE028 /* stodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stodoUITests.swift; sourceTree = "<group>"; };
 		A8B9E917244384CA004EE028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BE82CB2459F1FD0069CF8C /* TaskTableViewHeaderOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewHeaderOutput.swift; sourceTree = "<group>"; };
+		A8BE82CD2459F3570069CF8C /* TasksDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataSourceOutput.swift; sourceTree = "<group>"; };
 		A8C54F8924477EA700F9EE13 /* ListsModuleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsModuleInput.swift; sourceTree = "<group>"; };
 		A8C54F8B24477EC900F9EE13 /* ListsModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsModuleOutput.swift; sourceTree = "<group>"; };
 		A8C54F8D24477EE200F9EE13 /* ListsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsPresenter.swift; sourceTree = "<group>"; };
@@ -634,6 +638,8 @@
 				A8F0E4A8244B996C00EC5830 /* TaskTableViewCell.xib */,
 				A8F0E4AD244C8C6E00EC5830 /* TasksTableViewHeader.swift */,
 				A8F0E4AB244BAD7500EC5830 /* TasksDataSource.swift */,
+				A8BE82CB2459F1FD0069CF8C /* TaskTableViewHeaderOutput.swift */,
+				A8BE82CD2459F3570069CF8C /* TasksDataSourceOutput.swift */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -905,6 +911,7 @@
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
 				A8DEE6912451F96D006136C6 /* List+CoreDataClass.swift in Sources */,
+				A8BE82CE2459F3570069CF8C /* TasksDataSourceOutput.swift in Sources */,
 				A8F0E4AE244C8C6E00EC5830 /* TasksTableViewHeader.swift in Sources */,
 				A8F0E499244B528900EC5830 /* TasksPresenter.swift in Sources */,
 				A8F0E481244B39CD00EC5830 /* AddListViewInput.swift in Sources */,
@@ -930,6 +937,7 @@
 				A82D58512443BD9F00B237F0 /* ListsAPI.swift in Sources */,
 				A8F0E4A9244B996C00EC5830 /* TaskTableViewCell.swift in Sources */,
 				A8F0E47F244B384B00EC5830 /* UIColor+hex.swift in Sources */,
+				A8BE82CC2459F1FD0069CF8C /* TaskTableViewHeaderOutput.swift in Sources */,
 				A8ED3F7F244F88C200926440 /* ListCoreDataStore.swift in Sources */,
 				A8F0E46A244B222800EC5830 /* AddListViewController.swift in Sources */,
 				A8B9E8F8244384C8004EE028 /* ViewController.swift in Sources */,
