@@ -38,28 +38,34 @@ extension ListCoreDataStore: ListDataStore {
         return lists[0]
     }
     
-    func put(listResponse: ListResponse) {
+    func put(listResponse: RemoteList) -> List {
         let newList = List(context: container.viewContext)
         configure(list: newList, listResponse: listResponse)
         saveContext()
+        
+        return newList
     }
     
-    func put(listResponses: [ListResponse]) {
+    func put(listResponses: [RemoteList]) -> [List] {
+        var lists = [List]()
         for listResponse in listResponses {
             let newList = List(context: container.viewContext)
             configure(list: newList, listResponse: listResponse)
+            lists.append(newList)
         }
         
         saveContext()
+        
+        return lists
     }
     
     func delete(by guid: String) {
     }
 
-    private func configure(list: List, listResponse: ListResponse) {
+    private func configure(list: List, listResponse: RemoteList) {
         list.guid = listResponse.guid
         list.title = listResponse.title
-        list.summary = listResponse.summary
+        list.summary = listResponse.summary ?? ""
     }
     
 }

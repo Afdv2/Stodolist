@@ -25,13 +25,13 @@ struct ListsService: ListsServiceProtocol {
         }
     }
     
-    func putList(list: List, _ completion: @escaping (Result<ListResponse, Error>) -> Void) {
+    func putList(list: List, _ completion: @escaping (Result<RemoteList, Error>) -> Void) {
         listsProvider.request(.put(list: list)) { result in
             switch result {
             case .success(let response):
                 do {
                 let jsonDecoder = JSONDecoder()
-                let listResponse = try jsonDecoder.decode(ListResponse.self, from: response.data)
+                let listResponse = try jsonDecoder.decode(RemoteList.self, from: response.data)
                     completion(.success(listResponse))
                 } catch {
                     completion(.failure(LoadingDataError.decode(error.localizedDescription)))
@@ -42,13 +42,13 @@ struct ListsService: ListsServiceProtocol {
         }
     }
     
-    func deleteList(id: String, _ completion: @escaping (Result<ListResponse, Error>) -> Void) {
+    func deleteList(id: String, _ completion: @escaping (Result<RemoteList, Error>) -> Void) {
         listsProvider.request(.delete(id: id)) { result in
             switch result {
             case .success(let response):
                 do {
                     let jsonDecoder = JSONDecoder()
-                    let listResponse = try jsonDecoder.decode(ListResponse.self, from: response.data)
+                    let listResponse = try jsonDecoder.decode(RemoteList.self, from: response.data)
                     completion(.success(listResponse))
                 } catch {
                     completion(.failure(LoadingDataError.decode(error.localizedDescription)))

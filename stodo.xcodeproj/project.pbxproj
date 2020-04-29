@@ -21,8 +21,8 @@
 		A83A2CBB2444E36E007C0BEB /* ListsServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */; };
 		A83A2CBD2444E37C007C0BEB /* ListsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBC2444E37C007C0BEB /* ListsService.swift */; };
 		A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */; };
-		A881C9C0244F982600A2EED8 /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9BF244F982600A2EED8 /* ListResponse.swift */; };
-		A881C9C2244F984000A2EED8 /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9C1244F984000A2EED8 /* TaskResponse.swift */; };
+		A881C9C0244F982600A2EED8 /* RemoteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9BF244F982600A2EED8 /* RemoteList.swift */; };
+		A881C9C2244F984000A2EED8 /* RemoteTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881C9C1244F984000A2EED8 /* RemoteTask.swift */; };
 		A886FF1524479C0100EBAF2F /* ListsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1424479C0100EBAF2F /* ListsDataSource.swift */; };
 		A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */; };
 		A886FF1A24479C8400EBAF2F /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */; };
@@ -122,8 +122,8 @@
 		A83A2CBA2444E36E007C0BEB /* ListsServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsServiceProtocol.swift; sourceTree = "<group>"; };
 		A83A2CBC2444E37C007C0BEB /* ListsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsService.swift; sourceTree = "<group>"; };
 		A83A2CBF2444E748007C0BEB /* LoadingDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDataError.swift; sourceTree = "<group>"; };
-		A881C9BF244F982600A2EED8 /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
-		A881C9C1244F984000A2EED8 /* TaskResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
+		A881C9BF244F982600A2EED8 /* RemoteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteList.swift; sourceTree = "<group>"; };
+		A881C9C1244F984000A2EED8 /* RemoteTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTask.swift; sourceTree = "<group>"; };
 		A886FF1424479C0100EBAF2F /* ListsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsDataSource.swift; sourceTree = "<group>"; };
 		A886FF1724479C8400EBAF2F /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
 		A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				A801ADFF2443C5F20078225D /* ListsResponse.swift */,
-				A881C9BF244F982600A2EED8 /* ListResponse.swift */,
-				A881C9C1244F984000A2EED8 /* TaskResponse.swift */,
+				A881C9BF244F982600A2EED8 /* RemoteList.swift */,
+				A881C9C1244F984000A2EED8 /* RemoteTask.swift */,
 				A82D584F2443BD8E00B237F0 /* Network */,
 				A8C54F8724477E1500F9EE13 /* Service */,
 			);
@@ -901,7 +901,7 @@
 				A8C54FA02447887800F9EE13 /* ListsRouter.swift in Sources */,
 				A886FF1924479C8400EBAF2F /* ListsTableViewCell.swift in Sources */,
 				A8C54F9224477FC600F9EE13 /* ListsViewOutput.swift in Sources */,
-				A881C9C2244F984000A2EED8 /* TaskResponse.swift in Sources */,
+				A881C9C2244F984000A2EED8 /* RemoteTask.swift in Sources */,
 				A83A2CC02444E748007C0BEB /* LoadingDataError.swift in Sources */,
 				A801ADF92443C4090078225D /* String+Data.swift in Sources */,
 				A8DEE6912451F96D006136C6 /* List+CoreDataClass.swift in Sources */,
@@ -942,7 +942,7 @@
 				A8F0E46F244B224C00EC5830 /* AddListViewOutput.swift in Sources */,
 				A8C54F9E2447885C00F9EE13 /* ListsRouterInput.swift in Sources */,
 				A8DEE6922451F96D006136C6 /* Task+CoreDataClass.swift in Sources */,
-				A881C9C0244F982600A2EED8 /* ListResponse.swift in Sources */,
+				A881C9C0244F982600A2EED8 /* RemoteList.swift in Sources */,
 				A8F0E493244B521500EC5830 /* TasksViewInput.swift in Sources */,
 				A801AE002443C5F20078225D /* ListsResponse.swift in Sources */,
 				A8B9E8F4244384C8004EE028 /* AppDelegate.swift in Sources */,

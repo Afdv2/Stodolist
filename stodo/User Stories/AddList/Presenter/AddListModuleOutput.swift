@@ -1,4 +1,3 @@
 protocol AddListModuleOutput {
-    func didAdd(list: List)
-    func didCancel()
+    func didAddList(title: String, description: String?)
 }

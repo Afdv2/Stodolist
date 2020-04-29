@@ -1,7 +1,7 @@
 protocol ListDataStore {
     func get() -> [List]
     func get(by guid: String) -> List?
-    func put(listResponse: ListResponse)
-    func put(listResponses: [ListResponse])
+    func put(listResponse: RemoteList) -> List
+    func put(listResponses: [RemoteList]) -> [List]
     func delete(by guid: String)
 }

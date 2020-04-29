@@ -11,16 +11,11 @@ extension AddListPresenter: AddListViewOutput {
             return
         }
         
-        let list = List()
-        list.title = title
-        list.summary = description ?? ""
-        
-        output?.didAdd(list: list)
+        output?.didAddList(title: title, description: description)
         router?.closeModule()
     }
     
     func didTapCancel() {
-        output?.didCancel()
         router?.closeModule()
     }
 }

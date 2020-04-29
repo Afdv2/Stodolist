@@ -1,3 +1,3 @@
 protocol ListsDataSourceOutput: AnyObject {
-    func didSelect(list: List)
+    func didSelectList(index: Int)
 }

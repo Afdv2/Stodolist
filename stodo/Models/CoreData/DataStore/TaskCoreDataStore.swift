@@ -24,6 +24,8 @@ extension TaskCoreDataStore: TaskDataStore {
     
     func get(by listGuid: String) -> [Task] {
         let taskRequest = Task.createFetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "status", ascending: true)
+        taskRequest.sortDescriptors = [sortDescriptor]
         taskRequest.predicate = NSPredicate(format: "list.guid == %@", listGuid)
         guard let tasks = try? container.viewContext.fetch(taskRequest) else {
             return []
@@ -32,13 +34,13 @@ extension TaskCoreDataStore: TaskDataStore {
         return tasks
     }
     
-    func put(taskResponse: TaskResponse, with listGuid: String) {
+    func put(taskResponse: RemoteTask, with listGuid: String) {
         let newTask = Task(context: container.viewContext)
         configure(task: newTask, taskResponse: taskResponse, with: listGuid)
         saveContext()
     }
     
-    func put(taskResponses: [TaskResponse], with listGuid: String) {
+    func put(taskResponses: [RemoteTask], with listGuid: String) {
         for taskResponse in taskResponses {
             let newTask = Task(context: container.viewContext)
             configure(task: newTask, taskResponse: taskResponse, with: listGuid)
@@ -49,7 +51,7 @@ extension TaskCoreDataStore: TaskDataStore {
     func delete(guid: String) {
     }
     
-    private func configure(task: Task, taskResponse: TaskResponse, with listGuid: String) {
+    private func configure(task: Task, taskResponse: RemoteTask, with listGuid: String) {
         task.guid = taskResponse.guid
         task.title = taskResponse.title
         task.status = taskResponse.status

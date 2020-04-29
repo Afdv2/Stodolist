@@ -1,3 +1,3 @@
 struct ListsResponse: Codable {
-    var lists: [ListResponse]?
+    var lists: [RemoteList]?
 }

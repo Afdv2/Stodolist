@@ -29,9 +29,7 @@ class AddListViewController: UIViewController, ModuleTransitionable {
     
     @objc
     private func createList() {
-        DispatchQueue.main.async {
-            self.output?.didTapCreateList(title: self.titleTextField.text, description: self.descriptionTextView.text)
-        }
+        self.output?.didTapCreateList(title: self.titleTextField.text, description: self.descriptionTextView.text)
     }
     
     @objc
