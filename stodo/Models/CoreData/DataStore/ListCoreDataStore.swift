@@ -59,7 +59,9 @@ extension ListCoreDataStore: ListDataStore {
         return lists
     }
     
-    func delete(by guid: String) {
+    func delete(list: List) {
+        container.viewContext.delete(list)
+        saveContext()
     }
 
     private func configure(list: List, listResponse: RemoteList) {

@@ -21,7 +21,6 @@ final class TasksDataSource: NSObject {
         tableView.sectionHeaderHeight = 100
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
-        tableView.allowsSelection = false
     }
 }
 
@@ -57,6 +56,10 @@ extension TasksDataSource: UITableViewDelegate {
         taskTableHeader.configure(tasks: tasks)
         
         return taskTableHeader
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        output?.didSelectTask(by: indexPath.row)
     }
 }
 

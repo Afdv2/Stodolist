@@ -4,7 +4,7 @@ final class ListsPresenter: ListsModuleInput {
     weak var view: ListsViewInput?
     var output: ListsModuleOutput?
     var router: ListsRouterInput?
-    var service: ListsServiceProtocol?
+    var listService: ListsServiceProtocol?
     var listDataStore: ListDataStore?
     var taskDataStore: TaskDataStore?
     var lists: [List] = [] {
@@ -20,7 +20,7 @@ final class ListsPresenter: ListsModuleInput {
     }
     
     private func fetchRemoteLists(_ completion: @escaping (Bool) -> Void) {
-        service?.getLists({ result in
+        listService?.getLists({ result in
             switch result {
             case .success(let listsResponse):
                 self.save(listsResponse: listsResponse)
@@ -51,6 +51,7 @@ final class ListsPresenter: ListsModuleInput {
 }
 
 extension ListsPresenter: ListsViewOutput {
+    
     func viewLoaded() {
         view?.set(title: "Projects")
         loadLocalLists()
@@ -65,9 +66,14 @@ extension ListsPresenter: ListsViewOutput {
         router?.showAddListModule(output: self)
     }
     
-    func didSelectList(index: Int) {
+    func didSelectList(_ index: Int) {
         let list = lists[index]
         router?.showListModule(with: list, output: self)
+    }
+    
+    func didRemoveList(_ index: Int) {
+        listDataStore?.delete(list: lists[index])
+        loadLocalLists()
     }
 }
 

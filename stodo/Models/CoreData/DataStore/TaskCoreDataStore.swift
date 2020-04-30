@@ -22,6 +22,7 @@ struct TaskCoreDataStore {
 
 extension TaskCoreDataStore: TaskDataStore {
     
+    
     func get(by listGuid: String) -> [Task] {
         let taskRequest = Task.createFetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "status", ascending: true)
@@ -50,6 +51,15 @@ extension TaskCoreDataStore: TaskDataStore {
             let newTask = Task(context: container.viewContext)
             configure(task: newTask, taskResponse: taskResponse, with: listGuid)
         }
+        saveContext()
+    }
+    
+    func change(guid: String, by status: Bool) {
+        let taskRequest = Task.createFetchRequest()
+        taskRequest.predicate = NSPredicate(format: "guid == %@", guid)
+        let tasks = try? container.viewContext.fetch(taskRequest)
+        let task = tasks?.first
+        task?.status = status
         saveContext()
     }
     

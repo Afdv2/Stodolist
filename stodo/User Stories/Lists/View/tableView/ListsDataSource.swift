@@ -41,10 +41,16 @@ extension ListsDataSource: UITableViewDataSource {
         
         return listsCell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            output?.didRemoveList(indexPath.row)
+        }
+    }
 }
 
 extension ListsDataSource: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.didSelectList(index: indexPath.row)
+        output?.didSelectList(indexPath.row)
     }
 }

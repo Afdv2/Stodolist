@@ -22,7 +22,7 @@ final class ListsConfigurator {
         presenter.taskDataStore = taskDataStore
         presenter.router = router
         presenter.output = output
-        presenter.service = service
+        // presenter.listService = service
         router.view = view
         
         view.output = presenter

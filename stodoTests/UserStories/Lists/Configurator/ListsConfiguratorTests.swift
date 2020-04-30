@@ -26,7 +26,7 @@ final class ListsConfiguratorTests: XCTestCase {
         XCTAssertTrue(router.view is ListsViewController, "view in router is not ListsViewController")
         
         
-        XCTAssertNotNil(presenter.service, "service in ListsPresenter is nil after configuration")
-        XCTAssertTrue(presenter.service is ListsService, "service in ListsPresenter is not ListsService")
+        XCTAssertNotNil(presenter.listService, "service in ListsPresenter is nil after configuration")
+        XCTAssertTrue(presenter.listService is ListsService, "service in ListsPresenter is not ListsService")
     }
 }

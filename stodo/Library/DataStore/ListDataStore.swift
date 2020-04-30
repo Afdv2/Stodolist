@@ -3,5 +3,5 @@ protocol ListDataStore {
     func get(by guid: String) -> List?
     func put(listResponse: RemoteList) -> List
     func put(listResponses: [RemoteList]) -> [List]
-    func delete(by guid: String)
+    func delete(list: List)
 }

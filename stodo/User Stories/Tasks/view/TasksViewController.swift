@@ -51,4 +51,8 @@ extension TasksViewController: TasksDataSourceOutput {
     func didAddTask(with title: String) {
         output?.didAddTask(with: title)
     }
+    
+    func didSelectTask(by index: Int) {
+        output?.didSelectTask(by: index)
+    }
 }

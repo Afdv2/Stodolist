@@ -55,7 +55,11 @@ extension ListsViewController: ListsViewInput {
 }
 
 extension ListsViewController: ListsDataSourceOutput {
-    func didSelectList(index: Int) {
-        output?.didSelectList(index: index)
+    func didSelectList(_ index: Int) {
+        output?.didSelectList(index)
+    }
+    
+    func didRemoveList(_ index: Int) {
+        output?.didRemoveList(index)
     }
 }

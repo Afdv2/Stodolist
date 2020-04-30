@@ -68,7 +68,10 @@ final class TasksTableViewHeader: UITableViewHeaderFooterView {
 
 extension TasksTableViewHeader: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
-        didAddTask(with: textField.text)
+        if textField.text != nil && textField.text != "" {
+            didAddTask(with: textField.text)
+        }
+        
         textField.text = ""
     }
     

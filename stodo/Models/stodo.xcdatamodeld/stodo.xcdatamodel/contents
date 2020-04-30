@@ -4,7 +4,7 @@
         <attribute name="guid" attributeType="String"/>
         <attribute name="summary" optional="YES" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
-        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="list" inverseEntity="Task"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Task" inverseName="list" inverseEntity="Task"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="guid"/>
