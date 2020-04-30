@@ -48,3 +48,5 @@ Gemfile.lock
 
 # Generamba
 Templates/
+
+certs/
