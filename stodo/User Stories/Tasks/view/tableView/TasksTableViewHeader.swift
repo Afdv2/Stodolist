@@ -25,7 +25,12 @@ final class TasksTableViewHeader: UITableViewHeaderFooterView {
     }
     
     private func configureContent() {
-        contentView.backgroundColor = UIColor.white
+        if #available(iOS 13.0, *) {
+            contentView.backgroundColor = UIColor.systemBackground
+            addTaskTextField.backgroundColor = UIColor.secondarySystemBackground
+        } else {
+            // Fallback on earlier versions
+        }
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         addTaskTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +39,6 @@ final class TasksTableViewHeader: UITableViewHeaderFooterView {
         addTaskTextField.font = UIFont(name: "system", size: 16)
         
         addTaskTextField.layer.cornerRadius = 5
-        addTaskTextField.backgroundColor = UIColor(red: 0.88, green: 0.89, blue: 0.91, alpha: 0.68)
         let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 20))
         addTaskTextField.leftView = paddingView
         addTaskTextField.leftViewMode = .always

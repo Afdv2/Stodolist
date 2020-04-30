@@ -53,7 +53,7 @@ final class ListsPresenter: ListsModuleInput {
 extension ListsPresenter: ListsViewOutput {
     
     func viewLoaded() {
-        view?.set(title: "Projects")
+        view?.set(title: "Проекты")
         loadLocalLists()
         fetchRemoteLists() { [unowned self] success in
             if success {
