@@ -1,0 +1,3 @@
+protocol TasksRouterInput {
+    func closeModule()
+}

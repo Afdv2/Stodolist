@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="List" representedClassName="List" syncable="YES">
+        <attribute name="guid" attributeType="String"/>
+        <attribute name="summary" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Task" inverseName="list" inverseEntity="Task"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="guid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES">
+        <attribute name="guid" attributeType="String"/>
+        <attribute name="status" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="list" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="List" inverseName="tasks" inverseEntity="List"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="guid"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="List" positionX="-314.28125" positionY="40.83203125" width="128" height="103"/>
+        <element name="Task" positionX="-59.6484375" positionY="41.453125" width="128" height="103"/>
+    </elements>
+</model>
