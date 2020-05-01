@@ -30,12 +30,21 @@ final class ListsViewController: UIViewController, ModuleTransitionable {
     
     private func setupView() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        checkNeedShowAddProjectNotification()
         dataSource = ListsDataSource()
         dataSource.configure(tableView: tableView, output: self)
         
         addButton.layer.cornerRadius = addButton.frame.height / 2
         
         addButton.addTarget(self, action: #selector(addList), for: .touchUpInside)
+    }
+    
+    private func checkNeedShowAddProjectNotification(_ withAnimation: Bool = false) {
+        let duration = withAnimation ? 0.1 : 0
+        UIView.animate(withDuration: duration) { [unowned self] in
+            self.writingGirlImageView.alpha = self.dataSource?.lists?.count != 0 ? 0 : 1
+            self.addProjectLabel.alpha =  self.dataSource?.lists?.count != 0 ? 0 : 1
+        }
     }
     
     @objc
@@ -52,8 +61,7 @@ extension ListsViewController: ListsViewInput {
     func set(lists: [List]) {
         dataSource.lists = lists
         tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
-        writingGirlImageView.isHidden = lists.count != 0
-        addProjectLabel.isHidden = lists.count != 0
+        checkNeedShowAddProjectNotification(true)
     }
 }
 
