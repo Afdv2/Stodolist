@@ -44,6 +44,7 @@ final class ListsViewController: UIViewController, ModuleTransitionable {
         UIView.animate(withDuration: duration) { [unowned self] in
             self.writingGirlImageView.alpha = self.dataSource?.lists?.count != 0 ? 0 : 1
             self.addProjectLabel.alpha =  self.dataSource?.lists?.count != 0 ? 0 : 1
+            self.navigationController?.navigationBar.isHidden = self.dataSource?.lists?.count == 0
         }
     }
     
