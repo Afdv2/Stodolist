@@ -5,6 +5,7 @@ struct ListCoreDataStore {
     
     init() {
         self.container = CoreDataManager.shared.container
+        self.container.viewContext.undoManager = UndoManager()
     }
     
     private func saveContext() {
@@ -61,6 +62,11 @@ extension ListCoreDataStore: ListDataStore {
     
     func delete(list: List) {
         container.viewContext.delete(list)
+        saveContext()
+    }
+    
+    func undo() {
+        container.viewContext.undo()
         saveContext()
     }
 

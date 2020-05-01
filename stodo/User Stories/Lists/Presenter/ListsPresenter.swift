@@ -1,4 +1,5 @@
 import Foundation
+import TTGSnackbar
 
 final class ListsPresenter: ListsModuleInput {
     weak var view: ListsViewInput?
@@ -48,6 +49,19 @@ final class ListsPresenter: ListsModuleInput {
             }
         }
     }
+    
+    private func undo(message: String, actionText: String) {
+        let snackbar = TTGSnackbar(
+            message: message,
+            duration: .middle,
+            actionText: actionText,
+            actionBlock: { [unowned self] snackbar in
+                self.listDataStore?.undo()
+                self.loadLocalLists()
+            }
+        )
+        snackbar.show()
+    }
 }
 
 extension ListsPresenter: ListsViewOutput {
@@ -72,8 +86,11 @@ extension ListsPresenter: ListsViewOutput {
     }
     
     func didRemoveList(_ index: Int) {
-        listDataStore?.delete(list: lists[index])
+        let list = lists[index]
+        let title = list.title
+        listDataStore?.delete(list: list)
         loadLocalLists()
+        undo(message: "Вернуть проект \(title)", actionText: "Отмена")
     }
 }
 

@@ -2,25 +2,18 @@ import UIKit
 
 final class TasksDataSource: NSObject {
     var tasks: [Task]?
-    let tableView: UITableView
     weak var output: TasksDataSourceOutput?
     
     init(tableView: UITableView) {
-        self.tableView = tableView
-        super.init()
-        configure()
-    }
-    
-    private func configure() {
-        tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(TaskTableViewCell.nib, forCellReuseIdentifier: TaskTableViewCell.identifier)
-        tableView.register(TasksTableViewHeader.self,
-                           forHeaderFooterViewReuseIdentifier: TasksTableViewHeader.identifier)
+        tableView.register(TasksTableViewHeader.self, forHeaderFooterViewReuseIdentifier: TasksTableViewHeader.identifier)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = 100
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
+        super.init()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -43,6 +36,10 @@ extension TasksDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks != nil ? tasks!.count : 0
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        output?.didRemoveTask(index: indexPath.row)
+    }
 }
 
 extension TasksDataSource: UITableViewDelegate {
@@ -59,7 +56,7 @@ extension TasksDataSource: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.didSelectTask(by: indexPath.row)
+        output?.didSelectTask(index: indexPath.row)
     }
 }
 
