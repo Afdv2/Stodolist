@@ -11,8 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListsViewController" customModule="stodo" customModuleProvider="target">
             <connections>
                 <outlet property="addButton" destination="rrH-lZ-0FO" id="fcf-hg-JRQ"/>
+                <outlet property="addProjectLabel" destination="jub-nG-ldb" id="24p-HK-3cd"/>
                 <outlet property="tableView" destination="PQ1-ua-vBU" id="wV4-cN-kgd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="writingGirlImageView" destination="mAZ-6s-JIb" id="pbr-6J-xhY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -33,13 +35,31 @@
                     </constraints>
                     <state key="normal" image="+"/>
                 </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="writingGirl" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-6s-JIb">
+                    <rect key="frame" x="104" y="219" width="206" height="212"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="206" id="Oqr-TL-3KT"/>
+                        <constraint firstAttribute="height" constant="212" id="Qq3-fq-3h3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавить проект" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jub-nG-ldb">
+                    <rect key="frame" x="16" y="447" width="382" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jub-nG-ldb" secondAttribute="trailing" constant="16" id="7X4-nh-gDX"/>
                 <constraint firstItem="rrH-lZ-0FO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8jN-ch-9OO"/>
                 <constraint firstItem="PQ1-ua-vBU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AZ8-EY-8dd"/>
+                <constraint firstItem="mAZ-6s-JIb" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Dzn-3x-dQt"/>
+                <constraint firstItem="jub-nG-ldb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UYl-8d-9uy"/>
+                <constraint firstItem="mAZ-6s-JIb" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-150" id="XxF-0S-Eah"/>
                 <constraint firstItem="PQ1-ua-vBU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="krk-s8-8PJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PQ1-ua-vBU" secondAttribute="trailing" id="lbS-f0-GtZ"/>
+                <constraint firstItem="jub-nG-ldb" firstAttribute="top" secondItem="mAZ-6s-JIb" secondAttribute="bottom" constant="16" id="oZM-nn-drf"/>
                 <constraint firstAttribute="bottom" secondItem="PQ1-ua-vBU" secondAttribute="bottom" id="uCb-wm-GmP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rrH-lZ-0FO" secondAttribute="bottom" constant="16" id="zFb-i6-e01"/>
             </constraints>
@@ -50,5 +70,6 @@
     </objects>
     <resources>
         <image name="+" width="29" height="29"/>
+        <image name="writingGirl" width="206" height="212"/>
     </resources>
 </document>

@@ -4,11 +4,12 @@ import Dispatch
 
 final class ListsViewController: UIViewController, ModuleTransitionable {
     
+    @IBOutlet weak var writingGirlImageView: UIImageView!
     var output: ListsViewOutput?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var addProjectLabel: UILabel!
     var dataSource: ListsDataSource!
     
     static func create(nibName: String? = nil, bundle: Bundle? = nil) -> ListsViewController {
@@ -51,6 +52,8 @@ extension ListsViewController: ListsViewInput {
     func set(lists: [List]) {
         dataSource.lists = lists
         tableView.reloadData()
+        writingGirlImageView.isHidden = lists.count != 0
+        addProjectLabel.isHidden = lists.count != 0
     }
 }
 
