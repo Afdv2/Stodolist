@@ -21,8 +21,6 @@ struct TaskCoreDataStore {
 }
 
 extension TaskCoreDataStore: TaskDataStore {
-    
-    
     func get(by listGuid: String) -> [Task] {
         let taskRequest = Task.createFetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "status", ascending: true)
@@ -63,7 +61,9 @@ extension TaskCoreDataStore: TaskDataStore {
         saveContext()
     }
     
-    func delete(guid: String) {
+    func delete(task: Task) {
+        container.viewContext.delete(task)
+        saveContext()
     }
     
     private func configure(task: Task, taskResponse: RemoteTask, with listGuid: String) {

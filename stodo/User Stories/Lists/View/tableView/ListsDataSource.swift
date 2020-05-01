@@ -4,15 +4,16 @@ final class ListsDataSource: NSObject {
     weak var output: ListsDataSourceOutput?
     var lists: [List]?
     
-    func configure(tableView: UITableView, output: ListsDataSourceOutput?) {
+    init(tableView: UITableView, output: ListsDataSourceOutput?) {
         self.output = output
-        tableView.dataSource = self
-        tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         tableView.register(ListsTableViewCell.nib, forCellReuseIdentifier: ListsTableViewCell.identifier)
+        super.init()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 

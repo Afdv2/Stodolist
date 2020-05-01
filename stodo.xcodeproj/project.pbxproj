@@ -131,7 +131,7 @@
 		A886FF1824479C8400EBAF2F /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
 		A8B16A3B24479D1F00C0F5A4 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
 		A8B16A3D2447A61C00C0F5A4 /* UiTableViewCell+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTableViewCell+Nib.swift"; sourceTree = "<group>"; };
-		A8B9E8F0244384C8004EE028 /* stodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8B9E8F0244384C8004EE028 /* Stodolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stodolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B9E8F3244384C8004EE028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8B9E8F7244384C8004EE028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8B9E8FC244384C9004EE028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -383,7 +383,7 @@
 		A8B9E8F1244384C8004EE028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A8B9E8F0244384C8004EE028 /* stodo.app */,
+				A8B9E8F0244384C8004EE028 /* Stodolist.app */,
 				A8B9E906244384CA004EE028 /* stodoTests.xctest */,
 				A8B9E911244384CA004EE028 /* stodoUITests.xctest */,
 			);
@@ -676,7 +676,7 @@
 			);
 			name = stodo;
 			productName = stodo;
-			productReference = A8B9E8F0244384C8004EE028 /* stodo.app */;
+			productReference = A8B9E8F0244384C8004EE028 /* Stodolist.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A8B9E905244384CA004EE028 /* stodoTests */ = {
@@ -1142,7 +1142,7 @@
 				);
 				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = host.codelab.stodo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stodolist;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1164,7 +1164,7 @@
 				);
 				MARKETING_VERSION = 0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = host.codelab.stodo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stodolist;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -4,11 +4,12 @@ import Dispatch
 
 final class ListsViewController: UIViewController, ModuleTransitionable {
     
+    @IBOutlet weak var writingGirlImageView: UIImageView!
     var output: ListsViewOutput?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var addProjectLabel: UILabel!
     var dataSource: ListsDataSource!
     
     static func create(nibName: String? = nil, bundle: Bundle? = nil) -> ListsViewController {
@@ -29,12 +30,21 @@ final class ListsViewController: UIViewController, ModuleTransitionable {
     
     private func setupView() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        dataSource = ListsDataSource()
-        dataSource.configure(tableView: tableView, output: self)
-        
+        checkNeedShowAddProjectNotification()
+        dataSource = ListsDataSource(tableView: tableView, output: self)
         addButton.layer.cornerRadius = addButton.frame.height / 2
-        
         addButton.addTarget(self, action: #selector(addList), for: .touchUpInside)
+    }
+    
+    private func checkNeedShowAddProjectNotification(_ withAnimation: Bool = false) {
+        let duration = withAnimation ? 0.1 : 0
+        UIView.animate(withDuration: duration) { [unowned self] in
+            let existsLists = self.dataSource?.lists?.count != 0
+            self.writingGirlImageView.alpha = existsLists ? 0 : 1
+            self.addProjectLabel.alpha =  existsLists ? 0 : 1
+            self.navigationController?.navigationBar.isHidden = !existsLists
+            self.tableView.isHidden = !existsLists
+        }
     }
     
     @objc
@@ -51,6 +61,7 @@ extension ListsViewController: ListsViewInput {
     func set(lists: [List]) {
         dataSource.lists = lists
         tableView.reloadData()
+        checkNeedShowAddProjectNotification(true)
     }
 }
 

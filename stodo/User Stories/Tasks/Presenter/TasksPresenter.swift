@@ -23,9 +23,13 @@ final class TasksPresenter {
         output?.didAddTask()
     }
     
+    func removeTask(index: Int) {
+        guard let task = tasks?[index] else { return }
+        taskDataStore?.delete(task: task)
+    }
+    
     func invertStatusTask(by index: Int) {
-        guard let tasks = tasks else { return }
-        let task = tasks[index]
+        guard let task = tasks?[index] else { return }
         taskDataStore?.change(guid: task.guid, by: !task.status)
     }
 }
@@ -49,8 +53,13 @@ extension TasksPresenter: TasksViewOutput {
         loadLocalTasks()
     }
     
-    func didSelectTask(by index: Int) {
+    func didSelectTask(index: Int) {
         invertStatusTask(by: index)
+        loadLocalTasks()
+    }
+    
+    func didRemoveTask(index: Int) {
+        removeTask(index: index)
         loadLocalTasks()
     }
 }
