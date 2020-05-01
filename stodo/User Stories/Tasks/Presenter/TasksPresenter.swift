@@ -31,6 +31,7 @@ final class TasksPresenter {
     func invertStatusTask(by index: Int) {
         guard let task = tasks?[index] else { return }
         taskDataStore?.change(guid: task.guid, by: !task.status)
+        output?.didChangedTaskStatus()
     }
 }
 

@@ -106,4 +106,8 @@ extension ListsPresenter: TasksModuleOutput {
     func didAddTask() {
         loadLocalLists()
     }
+    
+    func didChangedTaskStatus() {
+        loadLocalLists()
+    }
 }

@@ -19,7 +19,7 @@ extension List {
     @NSManaged public var guid: String
     @NSManaged public var summary: String
     @NSManaged public var title: String
-    @NSManaged public var tasks: [Task]
+    @NSManaged public var tasks: Set<Task>
 }
 
 // MARK: Generated accessors for tasks
