@@ -42,7 +42,7 @@ extension TasksViewController: TasksViewInput {
     func set(tasks: [Task]?) {
         dataSource.tasks = tasks
         DispatchQueue.main.async {
-            self.tableView.reloadData()
+            self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
         }
     }
 }
@@ -52,7 +52,11 @@ extension TasksViewController: TasksDataSourceOutput {
         output?.didAddTask(with: title)
     }
     
-    func didSelectTask(by index: Int) {
-        output?.didSelectTask(by: index)
+    func didSelectTask(index: Int) {
+        output?.didSelectTask(index: index)
+    }
+    
+    func didRemoveTask(index: Int) {
+        output?.didRemoveTask(index: index)
     }
 }

@@ -4,5 +4,5 @@ protocol TaskDataStore {
     func put(title: String, with listGuid: String)
     func change(guid: String, by status: Bool)
     func put(taskResponses: [RemoteTask], with listGuid: String)
-    func delete(guid: String)
+    func delete(task: Task)
 }

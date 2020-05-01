@@ -51,7 +51,7 @@ extension ListsViewController: ListsViewInput {
     
     func set(lists: [List]) {
         dataSource.lists = lists
-        tableView.reloadData()
+        tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
         writingGirlImageView.isHidden = lists.count != 0
         addProjectLabel.isHidden = lists.count != 0
     }

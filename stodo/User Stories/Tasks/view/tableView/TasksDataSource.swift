@@ -43,6 +43,10 @@ extension TasksDataSource: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks != nil ? tasks!.count : 0
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        output?.didRemoveTask(index: indexPath.row)
+    }
 }
 
 extension TasksDataSource: UITableViewDelegate {
@@ -59,7 +63,7 @@ extension TasksDataSource: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        output?.didSelectTask(by: indexPath.row)
+        output?.didSelectTask(index: indexPath.row)
     }
 }
 
