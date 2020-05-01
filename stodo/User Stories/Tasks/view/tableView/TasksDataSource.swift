@@ -2,25 +2,18 @@ import UIKit
 
 final class TasksDataSource: NSObject {
     var tasks: [Task]?
-    let tableView: UITableView
     weak var output: TasksDataSourceOutput?
     
     init(tableView: UITableView) {
-        self.tableView = tableView
-        super.init()
-        configure()
-    }
-    
-    private func configure() {
-        tableView.dataSource = self
-        tableView.delegate = self
         tableView.register(TaskTableViewCell.nib, forCellReuseIdentifier: TaskTableViewCell.identifier)
-        tableView.register(TasksTableViewHeader.self,
-                           forHeaderFooterViewReuseIdentifier: TasksTableViewHeader.identifier)
+        tableView.register(TasksTableViewHeader.self, forHeaderFooterViewReuseIdentifier: TasksTableViewHeader.identifier)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = 100
         tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
+        super.init()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
