@@ -34,11 +34,9 @@ final class ListsPresenter: ListsModuleInput {
     }
     
     private func save(listsResponse: ListsResponse?) {
-        guard let listsResponse = listsResponse, let lists = listsResponse.lists else {
-            return
+        if let lists = listsResponse?.lists {
+          save(lists: lists)
         }
-        
-        save(lists: lists)
     }
     
     private func save(lists: [RemoteList]) {
