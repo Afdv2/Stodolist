@@ -35,7 +35,7 @@ final class ListsPresenter: ListsModuleInput {
     
     private func save(listsResponse: ListsResponse?) {
         if let lists = listsResponse?.lists {
-        save(lists: lists)
+          save(lists: lists)
         }
     }
     
